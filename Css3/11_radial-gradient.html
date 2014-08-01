@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Degradado-Lineal-Css3</title>
+	<style>
+	
+	fieldset{
+		width: 800px;
+		margin: 10px auto;
+	}
+	section{
+	border:2px solid #0000FF;
+	width: 600px;
+	height: 400px;
+	}
+	.degradado1 {
+		background: -webkit-radial-gradient(circle , #2F2FFF, #C4C4FF);
+		background:    -moz-radial-gradient(circle, #2F2FFF, #C4C4FF);
+		background:     -ms-radial-gradient(circle, #2F2FFF, #C4C4FF);
+		background:      -o-radial-gradient(circle, #2F2FFF, #C4C4FF);
+		background:         radial-gradient(circle, #2F2FFF, #C4C4FF);
+
+	}
+	.degradado2 {
+		background: -webkit-radial-gradient(50% 50%,closest-side,#CA0000, #FFFF00,#0000FF,#000);
+		background:    -moz-radial-gradient(left, #CA0000, #FFA4A4);
+		background:     -ms-radial-gradient(left, #CA0000, #FFA4A4);
+		background:      -o-radial-gradient(left, #CA0000, #FFA4A4);
+		background:         radial-gradient(left, #CA0000, #FFA4A4);
+	}
+	.degradado3 {
+		background: -webkit-radial-gradient(circle, #ECFFEC, #00FF00);
+		background:    -moz-radial-gradient(circle, #ECFFEC, #00FF00);
+		background:     -ms-radial-gradient(circle, #ECFFEC, #00FF00);
+		background:      -o-radial-gradient(circle, #ECFFEC, #00FF00);
+		background:         radial-gradient(circle, #ECFFEC, #00FF00);
+	}
+	.degradado4 {
+		background: -webkit-radial-gradient(circle, #FFFF00,#00FF00,#80FFFF,#0000FF,#FF8000);
+		background:    -moz-radial-gradient(circle, #FFFF00,#00FF00,#80FFFF,#0000FF,#FF8000);
+		background:     -ms-radial-gradient(circle, #FFFF00,#00FF00,#80FFFF,#0000FF,#FF8000);
+		background:      -o-radial-gradient(circle, #FFFF00,#00FF00,#80FFFF,#0000FF,#FF8000);
+		background:         radial-gradient(circle, #FFFF00,#00FF00,#80FFFF,#0000FF,#FF8000);
+	}
+	
+	</style>
+</head>
+<body>
+	<h1>Degradado-radial-Css3</h1>c
+	<fieldset>
+		<legend><h1>radial-gradient(circle,(este es por defecto))</h1></legend>
+		<section class="degradado1"></section>
+	</fieldset>
+	<!-- ============================================================================ -->
+	<fieldset>
+		<legend><h1>radial-gradient(circle,)</h1></legend>
+		<section class="degradado2"></section>
+	</fieldset>
+	<!-- ============================================================================ -->
+	<fieldset>
+		<legend><h1>radial-gradient(circle,)</h1></legend>
+		<section class="degradado3"></section>
+	</fieldset>
+	<!-- ============================================================================ -->
+	<fieldset>
+		<legend><h1>radial-gradient(circle, ,)</h1></legend>
+		<section class="degradado4"></section>
+	</fieldset>
+	<!-- ============================================================================ -->
+	
+</body>
+</html>

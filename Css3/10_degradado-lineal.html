@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Degradado-Lineal-Css3</title>
+	<style>
+	
+	fieldset{
+		width: 800px;
+		margin: 10px auto;
+	}
+	section{
+	border:2px solid #0000FF;
+	width: 600px;
+	height: 400px;
+	}
+	.degradado1 {
+		background: -webkit-linear-gradient(top , #2F2FFF, #C4C4FF);
+		background:    -moz-linear-gradient(top, #2F2FFF, #C4C4FF);
+		background:     -ms-linear-gradient(top, #2F2FFF, #C4C4FF);
+		background:      -o-linear-gradient(top, #2F2FFF, #C4C4FF);
+		background:         linear-gradient(top, #2F2FFF, #C4C4FF);
+	}
+	.degradado2 {
+		background: -webkit-linear-gradient(left, #CA0000, #FFA4A4);
+		background:    -moz-linear-gradient(left, #CA0000, #FFA4A4);
+		background:     -ms-linear-gradient(left, #CA0000, #FFA4A4);
+		background:      -o-linear-gradient(left, #CA0000, #FFA4A4);
+		background:         linear-gradient(left, #CA0000, #FFA4A4);
+	}
+	.degradado3 {
+		background: -webkit-linear-gradient(bottom right, #ECFFEC, #00FF00);
+		background:    -moz-linear-gradient(bottom right, #ECFFEC, #00FF00);
+		background:     -ms-linear-gradient(bottom right, #ECFFEC, #00FF00);
+		background:      -o-linear-gradient(bottom right, #ECFFEC, #00FF00);
+		background:         linear-gradient(bottom right, #ECFFEC, #00FF00);
+	}
+	.degradado4 {
+		background: -webkit-linear-gradient(right, #FFFF00,#00FF00,#80FFFF,#0000FF,#FF8000);
+		background:    -moz-linear-gradient(right, #FFFF00,#00FF00,#80FFFF,#0000FF,#FF8000);
+		background:     -ms-linear-gradient(right, #FFFF00,#00FF00,#80FFFF,#0000FF,#FF8000);
+		background:      -o-linear-gradient(right, #FFFF00,#00FF00,#80FFFF,#0000FF,#FF8000);
+		background:         linear-gradient(right, #FFFF00,#00FF00,#80FFFF,#0000FF,#FF8000);
+	}
+	
+	</style>
+</head>
+<body>
+	<h1>Degradado-Lineal-Css3</h1>
+	<fieldset>
+		<legend><h1>linear-gradient(top bottom,(este es por defecto))</h1></legend>
+		<section class="degradado1"></section>
+	</fieldset>
+	<!-- ============================================================================ -->
+	<fieldset>
+		<legend><h1>linear-gradient(left, ,)</h1></legend>
+		<section class="degradado2"></section>
+	</fieldset>
+	<!-- ============================================================================ -->
+	<fieldset>
+		<legend><h1>linear-gradient(bottom right, ,)</h1></legend>
+		<section class="degradado3"></section>
+	</fieldset>
+	<!-- ============================================================================ -->
+	<fieldset>
+		<legend><h1>linear-gradient(right, ,)</h1></legend>
+		<section class="degradado4"></section>
+	</fieldset>
+	<!-- ============================================================================ -->
+	
+</body>
+</html>

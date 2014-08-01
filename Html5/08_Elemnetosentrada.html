@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nuevos Elementos de entrada - Html:5</title>
+</head>
+<body>
+	<h1>Nuevos Elementos de entrada - Html:5</h1>
+	<form method="post" autocomplete="on">
+	<fieldset>
+		<legend>Color</legend>
+		<input type="color" id="pcolor" oninput="">
+	</fieldset>
+<!-- /////////////////////////////////////////////////////////////////////////////// -->
+	<fieldset>
+		<legend>fecha</legend>
+		<input type="date" >
+	</fieldset>
+<!-- /////////////////////////////////////////////////////////////////////////////// -->
+<fieldset>
+		<legend>Correo Electronico</legend>
+		<input type="email" name="correo" required>
+		</fieldset>
+	<input type="submit" value="Enviar formulario" autocomplete="on">
+<!-- /////////////////////////////////////////////////////////////////////////////// -->	<fieldset>
+		<legend>Mes</legend>
+		<input type="month" name="correo" required>
+	</fieldset>
+<!-- /////////////////////////////////////////////////////////////////////////////// -->
+<fieldset>
+		<legend>numeros</legend>
+		<input type="number" min="0" max="100">
+	</fieldset>
+<!-- /////////////////////////////////////////////////////////////////////////////// -->
+<fieldset>
+		<legend>Rango</legend>
+		<input type="range" min="0" max="100" step="5" 
+		id="orango" oninput="orango.value=this.vlue">
+		<output id="orango" for="rango" ></output>
+	</fieldset>
+<!-- /////////////////////////////////////////////////////////////////////////////// -->
+<fieldset>
+		<legend>Buscar</legend>
+		<input type="search">
+	</fieldset>
+	<input type="submit" value="Enviar formulario" autocomplete="on">
+<!-- /////////////////////////////////////////////////////////////////////////////// -->
+<fieldset>
+		<legend>tiempo</legend>
+		<input type="time">
+	</fieldset>	
+<!-- /////////////////////////////////////////////////////////////////////////////// -->
+<fieldset>
+		<legend>Correo Electronico</legend>
+		<input type="url" name="url" required>
+		
+	</fieldset>
+	<input type="submit" value="Enviar formulario" autocomplete="on">
+<!-- /////////////////////////////////////////////////////////////////////////////// -->
+<fieldset>
+		<legend>Semana</legend>
+		<input type="week">
+	</fieldset>	
+<!-- /////////////////////////////////////////////////////////////////////////////// -->	
+
+</form>
+</body>
+</html>

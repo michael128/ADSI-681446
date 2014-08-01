@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Atributos (Formularios) Especificos- html5</title>
+</head>
+<body>
+	<h1>Atributos (Formularios) Especificos- html5</h1>
+	<fieldset>
+		<legend>Autocompletar</legend>
+		<form action="" method="post">
+		     <label for="nombre">Nombre:</label>
+			<input type="text" id="nombre" autocomplete="off">
+			<label for="telefono">Telefono:</label>
+			<input type="text" id="telefono" autocomplete="on">
+			<input type="submit" value="Enviar Datos">
+		</form>
+	</fieldset>
+
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<fieldset>
+		<legend>autofocus</legend>
+		<form action="" method="post">
+		     <label for="correo">Correo Electronico:</label>
+			<input type="email" id="correo" autofocus>
+			<input type="submit" value="Enviar Datos">
+		</form>
+	</fieldset>
+   <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+   <fieldset>
+		<legend>form</legend>
+		<form action="" method="post" id="frm" novalidate>
+		     <label for="correo">Correo:</label>
+			<input type="email" id="correo" name="correo" autofocus="off">
+			<input type="submit" value="Enviar Datos">
+		</form>
+		<label for="correo">Dirección:</label>
+		<input type="text" id="dirección" name="dirección" form="frm">
+	</fieldset>
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	 <fieldset>
+		<legend>form</legend>
+		<form action="datos.php" method="post"  >
+		     <label for="edad">Edad:</label>
+			<input type="number" id="edad">
+			<input type="submit" value="Enviar Datos">
+			<input type="submit" value="Enviar datos a otro archivo" formaction="procesar.php">
+	</form>
+	</fieldset>
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	 <fieldset>
+		<legend>formEnctype</legend>
+		<form action="" method="post"  >
+		     <label for="nombre">Nombre:</label>
+			<input type="text" id="nombre" name="nombre">
+			  <label for="foto">foto:</label>
+			<input type="file" id="foto" name="foto">
+			<input type="submit" value="Enviar Datos">
+			<input type="submit" value="Enviar datos y archivos" formenctype=
+			"multipart/form/data">
+	</form>
+	</fieldset>
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+	<fieldset>
+		<legend>formMethod</legend>
+		<form action="" method="post"  >
+		     <label for="nombre">Nombre:</label>
+			<input type="text" id="nombre" name="nombre">
+			  <label for="foto">foto:</label>
+			<input type="file" id="foto" name="foto">
+			<input type="submit" value="Enviar post">
+			<input type="submit" value="Enviar get" formmethod="get">
+	</form>
+	</fieldset>
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<fieldset>
+		<legend>fomTarget</legend>
+		<form action="" method="post">
+		     <label for="correo">Nombre Completo:</label>
+			<input type="text" id="nombre" name="nombre">
+			<input type="submit" value="enviar datos" formtarget="_blank">
+		</form>
+	</fieldset>
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+		<fieldset>
+<form action="" method="post">
+<h1>Largo - Ancho</h1>
+     <input type="text" id="nombre" name="nombre">
+	<input type="image" src="imgs/callofduty.jpg" widht="300" height="300">
+		</form>
+		</fieldset>
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+		<fieldset>
+		<legend>Lista</legend>
+<form action="" method="post">
+
+     <input list="departamento">
+	<datalist id="departamento">
+		<option value="Caldas">Caldas</option>
+		<option value="Quindio">Quindio</option>
+		<option value="Risaralda">Risaralda</option>
+	</datalist>
+	<input type="submit" value="Enviar Datos">
+		</form>
+		</fieldset>
+   <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+   <fieldset>
+   	<legend>Minimo y Maximo</legend>
+   	<form action="">
+   		<label for="edad">Edad:</label>
+   		<input type="bumber" id="edad" name="edad" min="18" max="80">
+   		<input type="submit" value="Enviar datos">
+   	</form>
+   </fieldset>
+   <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+   <fieldset>
+		<legend>Multiple</legend>
+		<form action="" method="post"  >
+		     <label for="canciones">Canciones:</label>
+			
+			<input type="file" id="canciones" name="canciones" multiple>
+			<input type="submit" value="Enviar post">
+	</form>
+	</fieldset>
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<fieldset>
+		<legend>Placeholder</legend>
+		<form action="" method="post"  >
+		     <input type="text" id="nombre" placeholder="Ingrese su Nombre">
+		     <br>
+		      <input type="text" id="apellido" placeholder="Ingrese su Nombre">
+		     <br>
+		     <input type="submit" value="Enviar Datos">
+	</form>
+	</fieldset>
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+    <fieldset>
+		<legend>requerido</legend>
+		<form action="" method="post"  >
+		     <input type="text" id="nombre" required>
+		     <br>
+		      <input type="text" id="apellido" required>
+		     <br>
+		     <input type="submit" value="Enviar Datos">
+	</form>
+	</fieldset>
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	  <fieldset>
+   	<legend>step</legend>
+   	<form action="" method="post">
+   		<label for="edad">Edad:</label>
+   		<input type="range" id="edad" name="edad" step="10" oninput="salida.value=this.vlue">
+   		<input type="submit" value="Enviar datos">
+   	</form>
+   </fieldset>
+   <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+		
+		
+		
+
+
+</body>
+</html>

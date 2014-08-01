@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nuevos elemnetos de Entrada (html:5)</title>
+</head>
+<body>
+	<h1>Nuevos elemnetos de Entrada (html:5)</h1>
+
+	<form method="get" oninput="salida.value=parseInt(base.value)*parseInt(altura.value)">
+
+<!-- /////////////////////////////////////////////////////////////////////////////// -->
+<fieldset>
+	<legend>Lista de datos</legend>
+	<input list="lenguajes">
+	<datalist id="lenguajes">
+		<option value="C++">C++</option>
+		<option value="Java">Java</option>
+		<option value="php">php</option>
+		<option value="c#">c#</option>
+		<option value="Python">Python</option>
+	</datalist>
+</fieldset>
+<!-- /////////////////////////////////////////////////////////////////////////////// -->
+<fieldset>
+	<legend>Generador de Claves</legend>
+     <keygen name="claves">
+</fieldset>
+<!-- /////////////////////////////////////////////////////////////////////////////// -->
+<fieldset>
+	<legend>range</legend>
+	<label for="base"><strong>Base</strong></label>
+	<input type="range" id="base" min="1" max="100">
+	<label for="altura"><strong>altura</strong></label>
+	<input type="range" name="altura">
+	<label for="salida">El area es</label>
+     <output id="salida" for="base altura"></output>
+     
+</fieldset>
+<!-- /////////////////////////////////////////////////////////////////////////////// -->
+	</form>
+</body>
+</html>

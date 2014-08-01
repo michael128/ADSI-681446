@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nuevos Selectores - Css3</title>
+	<style>
+	/*//////////////////01////////////////////////// */	
+	p~ul{border:2px solid red;}
+    /*//////////////////02////////////////////////// */	
+	 a[href^='http'] {border:2px solid #00f;}
+	/*//////////////////03////////////////////////// */	
+	a[href$='.pdf']{border: 2px solid orange;}
+	/*//////////////////04////////////////////////// */
+	a[href*='google'] {border: 2px solid #00FF00; }
+	/*//////////////////05////////////////////////// */
+	 li.c1:first-of-type{background-color: #065;}
+	/*//////////////////06////////////////////////// */
+     li.c2:last-of-type{background-color: #065;}
+    /*//////////////////07////////////////////////// */
+    li.eje7:only-of-type{ background-color: #808080;}
+    /*//////////////////08////////////////////////// */
+    section.eje8 p:only-child { background-color: #0000FF;}
+    /*//////////////////09////////////////////////// */
+     section.eje9 p:nth-child(2) { background-color: #0080FF}
+    /*//////////////////10////////////////////////// */
+     section.eje10 p:nth-last-child(2) {background-color:#808040}
+    /*//////////////////11////////////////////////// */
+	section.eje11 p:nth-of-type(2)	{background-color:#FFFF00}
+    /*//////////////////12////////////////////////// */
+     section.eje12 p:nth-of-type(3)	{background-color:#FFFF00}
+    /*//////////////////13////////////////////////// */
+	section.eje13 p:nth-last-of-type(2){background-color: #000080}
+    /*//////////////////14////////////////////////// */
+	section.eje14 p:last-child{background-color: #9595FF}
+    /*//////////////////15////////////////////////// */
+	:root {
+			background: -webkit-linear-gradient(left, #fff, #999);
+			background:         linear-gradient(left, #fff, #999);
+		}
+    /*//////////////////16////////////////////////// */
+    section.eje16 p:empty {border: 2px solid red;}
+    /*//////////////////17////////////////////////// */
+    section.eje17 #noticias:target {background-color: #ff0}
+    section.eje17 #informes:target {background-color: #ff0}
+    section.eje17 #exclusivo:target {background-color: #ff0}
+    /*//////////////////18////////////////////////// */
+    section.eje18 input:enabled {border: 2px solid #FF00FF;}
+    /*//////////////////19////////////////////////// */
+ 	section.eje19 input:disabled {border: 2px solid #FF00FF;}    
+    /*//////////////////20////////////////////////// */
+    section.eje20 input:checked {border: 2px solid #7DBEFF;} 
+    /*//////////////////21////////////////////////// */
+    section.eje21 :not(p) { background-color: #8080C0}
+    /*//////////////////22////////////////////////// */
+	::selection {
+			background: none;
+		}
+		p.amarillo ::selection {
+			background: yellow;
+		}
+		p.azul ::selection {
+			background: blue;
+			color: white;
+		}
+		p.rojo ::selection {
+			background: red;
+			color: white;
+		}
+    /*//////////////////fin////////////////////////// */
+</style>
+</head>
+<body>
+	<h1>Nuevos Selectores - Css3</h1>
+	<fieldset>
+		<legend><h2>p~ul</h2></legend>
+		<h1>Selecciona todos los elementos UL precedidas por un elemento P </h1>
+		<p >
+			<ul>
+				<li>Colombia</li>
+				<li>Argentina</li>
+				<li>Brasil</li>
+			</ul>
+			<ul>
+				<li>Chile</li>
+				<li>Ecuador</li>
+				<li>Uruguay</li>
+			</ul>
+			</p>
+			<section>Lorem ipsum dolor sit.
+					<ul>
+				<li>Colombia</li>
+				<li>Argentina</li>
+				<li>Brasil</li>
+			</ul>
+			<ul>
+				<li>Chile</li>
+				<li>Ecuador</li>
+				<li>Uruguay</li>
+			</ul>
+			</section>
+	</fieldset>
+
+	<!--02||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+	<fieldset>
+		<legend><h2>a[href^='https']</h2></legend>
+		<h1>Selecciona todos los elementos A cuyo valor de atributo src comienza con 
+		"https"</h1>
+		<p>
+				<nav>
+					<ul>
+						<a href="https://www.facebook.com/">facebook</a>
+						<a href="https://twitter.com/">twitter</a>
+						<a href="http://oferta.senasofiaplus.edu.co/sofia-oferta/">Sofia Plus</a>
+					</ul>
+				</nav>
+				</p>
+		</fieldset>
+	<!-- 03||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+<fieldset>
+		<legend><h2>a[href$='.pdf']</h2></legend>
+		<h1>Selecciona todos los elementos A cuyo valor del atributo src termina con 
+		".pdf"</h1>
+		<p>
+				<nav>
+					<ul>
+						<a href="libro/css3.doc">css3</a>
+						<a href="libro/html:5.xlsx">html:5</a>
+						<a href="libro/js.pdf">js</a>
+					</ul>
+				</nav>
+				</p>
+		</fieldset>
+
+ <!-- 04||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+ <fieldset>
+		<legend><h2>a[href*='google']</h2></legend>
+		<h1>Selecciona todos los elementos A cuyo valor del atributo se contiene de la cadena "google"</h1>
+		<p>
+				<nav>
+					<ul>
+						<li><a href="http://google.com"> Google</a></li>
+		<li><a href="http://facebook.com"> Facebook</a></li>
+		<li><a href="http://twitter.com"> Twitter</a></li>
+		<li><a href="http://maps.google.com"> Mapas de Google</a></li>
+		<li><a href="http://youtube.com"> Youtube</a></li>
+					</ul>
+				</nav>
+				</p>
+		</fieldset>
+<!-- 05||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+ <fieldset>
+		<legend><h2>p:frist-of-type</h2></legend>
+		<h1>Selecciona el primer elemento P de su padre</h1>
+		<p class="ejem05">
+				<li class="c1">Colombia</li>
+				<li class="c1">Argentina</li>
+				<li class="c1">Brasil</li>
+	    </p>
+</fieldset>
+<!-- 06||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+ <fieldset>
+		<legend><h2>p:last-of-type</h2></legend>
+		<h1>Selecciona el ultimo elemento P de su padre</h1>
+		<p>
+				<li class="c2">Colombia</li>
+				<li class="c2">Argentina</li>
+				<li class="c2">Brasil</li>
+	    </p>
+</fieldset>
+<!-- 07||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+ <fieldset>
+		<legend><h2>li:only-of-type</h2></legend>
+		<h1>Selecciona el Unico elemento P de su padre</h1>
+		<p>
+				<li class="eje7">Lorem ipsum dolor sit 1.</li>
+				
+	    </p>
+</fieldset>
+<!-- 08||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+<fieldset>
+		<legend><h2>li:only-child</h2></legend>
+		<h1>Selecciona el unico elemento hijo P de su padre</h1>
+		<section class="eje8">
+				<p >Lorem ipsum dolor sit 1.</p>
+				<p >Lorem ipsum dolor sit 2.</p>
+				<p >Lorem ipsum dolor sit 3.</p>
+				<ul>
+					<p>Lorem ipsum dolor sit.</p>
+				</ul>
+				</section>
+		
+</fieldset>
+<!-- 09||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  -->
+<fieldset>
+		<legend><h2>p:nth-child(2)</h2></legend>
+		<h1>Selecciona el segundo elemento hijo P de su padre</h1>
+		<section class="eje9">
+				<p >Lorem ipsum dolor sit 1</p>
+				<p >Lorem ipsum dolor sit 2</p>
+				<p >Lorem ipsum dolor sit 3</p>
+				<p >Lorem ipsum dolor sit 4</p>
+				<p >Lorem ipsum dolor sit 5</p>
+				</section>
+		
+</fieldset>
+
+<!-- 10||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  -->
+
+<fieldset>
+		<legend><h2>p:nth-last-child(2)</h2></legend>
+		<h1>Selecciona el segundo elemento hijo P contando desde el ultimo elemento</h1>
+		
+		     <section class="eje10">
+				<p >Lorem ipsum dolor sit 2</p>
+				<p >Lorem ipsum dolor sit 3</p>
+				<p >Lorem ipsum dolor sit 4</p>
+				<p >Lorem ipsum dolor sit 5</p>
+				</section>
+</fieldset>
+<!-- 11||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  -->
+<fieldset >
+		<legend><h2>p:nth-last-child(2)</h2></legend>
+		<h1>Selecciona el segundo elemento hijo P contando desde el ultimo elemento</h1>
+		
+		     <section class="eje11">
+				<p>Lorem ipsum dolor sit 2</p>
+				<p>Lorem ipsum dolor sit 3</p>
+				<p>Lorem ipsum dolor sit 4</p>
+				<p>Lorem ipsum dolor sit 5</p>
+				</section>
+</fieldset>
+<!-- 12||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  -->
+<fieldset >
+		<legend><h2>p:nth-of-type(3)</h2></legend>
+		<h1>Selecciona el tercer elemento hijo P de su padre</h1>
+		
+		     <section class="eje12">
+				<p>Lorem ipsum dolor sit 2</p>
+				<p>Lorem ipsum dolor sit 3</p>
+				<p>Lorem ipsum dolor sit 4</p>
+				<p>Lorem ipsum dolor sit 5</p>
+				</section>
+</fieldset>
+<!-- 13||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  -->
+<fieldset >
+		<legend><h2>p:nth-last-of-type(3)</h2></legend>
+		<h1>Selecciona el tercer elemento hijo P contando desde el ultimo elem. hijo</h1>
+		
+		     <section class="eje13">
+				<p>Lorem ipsum dolor sit 2</p>
+				<p>Lorem ipsum dolor sit 3</p>
+				<p>Lorem ipsum dolor sit 4</p>
+				<p>Lorem ipsum dolor sit 5</p>
+				</section>
+<!-- 14||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  -->
+<fieldset >
+		<legend><h2>p:last-child</h2></legend>
+		<h1>Selecciona el ultimo elemento hijo P de su padre</h1>
+		
+		     <section class="eje14">
+				<p>Lorem ipsum dolor sit 2</p>
+				<p>Lorem ipsum dolor sit 3</p>
+				<p>Lorem ipsum dolor sit 4</p>
+				<p>Lorem ipsum dolor sit 5</p>
+				</section>
+</fieldset>
+<!-- 15||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  -->
+<fieldset >
+		<legend><h2>:root</h2></legend>
+		<h1>Selecciona el elemento raiz de un documento</h1>
+		
+		     <section class="eje15">
+				<p>Sirve para degrado de paginas</p>
+				
+				</section>
+</fieldset>
+<!-- 16||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  -->
+<fieldset >
+		<legend><h2>p:empaty</h2></legend>
+		<h1>Selecciona los elementos P que no tienen hijos (incluidos los nodos del texto</h1>
+		
+		     <section class="eje16">
+				<p>Lorem ipsum dolor sit 2</p>
+				<p>Lorem ipsum dolor sit 3</p>
+				<p>Lorem ipsum dolor sit 4</p>
+				<p>Lorem ipsum dolor sit 5</p>
+				<p></p>
+				</section>
+</fieldset>
+<!-- 17||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  -->
+<fieldset >
+		<legend><h2>#noticias:target</h2></legend>
+		<h1>Selecciona el elemento #noticias actualmente activo (se hace clic en el enlace que contiene ese nombre de ancla</h1>
+		
+		     <section class="eje17">
+				<ul>
+					<li>
+						<a href="#noticias">Noticias</a>
+						<a href="#informes">Informes</a>
+						<a href="#exclusivo">Exclusivo</a>
+
+						<section id="noticias">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate similique obcaecati nostrum quod eligendi, illo quas modi, laboriosam quis in ea reprehenderit sequi odit accusamus porro officia perspiciatis soluta, velit.</p>                      </section>
+						<section id="informes">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate similique obcaecati nostrum quod eligendi, illo quas modi, laboriosam quis in ea reprehenderit sequi odit accusamus porro officia perspiciatis soluta, velit.</p>
+						</section>
+						<section id="exclusivo">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate similique obcaecati nostrum quod eligendi, illo quas modi, laboriosam quis in ea reprehenderit sequi odit accusamus porro officia perspiciatis soluta, velit.</p>
+						</section>
+					</li>
+				</ul>
+				</section>
+</fieldset>
+<!-- 18||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  -->
+<fieldset >
+		<legend><h2>Input:enabled</h2></legend>
+		<h1>Selecciona todos los elementos input habilitados</h1>
+		
+		     <section class="eje18">
+				<input type="text" name="campo1" disabled="disabled">
+		<input type="text" name="campo2" enabled="enabled">
+				</section>
+
+
+</fieldset>
+<!-- 19||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  -->
+<fieldset >
+		<legend><h2>Input:disabled</h2></legend>
+		<h1>Selecciona todos los elementos input inhabilitados</h1>
+		
+		     <section class="eje19">
+				<input type="text" name="campo1" disabled="disabled">
+		<input type="text" name="campo2" >
+				</section>
+
+
+</fieldset>
+<!-- 20||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  -->
+<fieldset >
+		<legend><h2>Input:checked</h2></legend>
+		<h1>Selecciona todos los elementos input marcados</h1>
+		
+		     <section class="eje20">
+				<label>
+			Futbol
+			<input type="checkbox" value="Futbol" checked="checked">
+		</label>
+		<label>
+			Baloncesto
+			<input type="checkbox" value="Baloncesto">
+		</label>
+		<label>
+			Ciclismo
+			<input type="checkbox" value="Ciclismo">
+		</label>
+				</section>
+				</fieldset>
+<!-- 21||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  -->
+<fieldset>
+<legend><h2>Not:(p)</h2></legend>
+		<h1>Selecciona cada elemnto que no es un elemento p</h1>
+		
+		     <section class="eje21">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, voluptas adipisci eveniet minima, in rerum illo velit odio quibusdam ducimus id, numquam obcaecati omnis. Libero debitis fugit nulla sed perferendis!</p>
+			<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore nemo dicta laborum possimus accusantium, odit, mollitia adipisci ducimus quia maiores nesciunt, hic. Esse quidem, ad velit non molestias quo modi.</div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore praesentium obcaecati corporis harum, atque dolor iure eveniet temporibus non ut hic nam porro perspiciatis ipsa officia facilis eaque illo placeat.</p>
+			<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta rerum quod dolore in, inventore perferendis blanditiis alias expedita veniam! Itaque, cum reiciendis aspernatur omnis, possimus deleniti praesentium odit temporibus assumenda.</div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit beatae, sequi quas reprehenderit perspiciatis harum expedita commodi, fugit neque doloremque, veritatis vitae incidunt dignissimos animi soluta nihil laborum. Temporibus, architecto?</p>
+			<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis laboriosam cupiditate quasi distinctio magni officiis rerum provident inventore vitae obcaecati ut incidunt accusantium necessitatibus a, temporibus facilis possimus, alias modi.</div>
+				</section>
+				</fieldset>
+<!-- 21||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  -->
+
+<fieldset>
+	<legend>
+		<h1>Selecciona la porcion de un elemento que es seleccionado por el usuario</h1>
+		</legend>
+		<section class="eje22">
+		<p class="amarillo">
+		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, cupiditate, impedit fugit fuga veritatis illo blanditiis deserunt vel reprehenderit mollitia tempore iste laborum cumque a ducimus alias totam repellat provident.</span>
+		<span>Similique, repellendus, velit nisi sunt magnam cumque id odio nemo adipisci nostrum blanditiis atque ex minus tenetur consectetur dolore molestiae voluptatum dolores aliquam et. Consequatur molestiae nesciunt necessitatibus nihil quidem.</span>
+		<span>Corrupti, possimus, minima, sequi, consectetur nulla voluptate eum quam mollitia error tenetur deserunt aliquam laudantium voluptatibus architecto molestias adipisci sapiente autem rem. Consequuntur, excepturi voluptates saepe modi autem. Quod, magni.</span>
+		<span>Minus, earum, iure repudiandae eos dolor sed illum distinctio praesentium dignissimos animi a id consectetur deleniti quos mollitia! Quam, quos quidem ab fugit praesentium mollitia repudiandae veniam et. Deleniti, sunt.</span>
+	</p>
+	<p class="azul">
+		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, dolore labore quisquam quasi atque suscipit error cum a! Id, provident sequi tempore ipsam perspiciatis error facilis voluptatum nemo veniam asperiores.</span>
+		<span>Quae, voluptas, placeat, debitis, deleniti mollitia sapiente enim eos quam id inventore quod maxime earum omnis temporibus eum veniam cupiditate qui suscipit vel quis. Nobis, asperiores distinctio vero iure nostrum.</span>
+		<span>Corporis, assumenda, excepturi, similique quasi blanditiis id animi reiciendis quisquam dolorem saepe laborum eaque deleniti consectetur labore atque ducimus minus cupiditate temporibus. Totam, rerum nulla possimus illo necessitatibus! Placeat, reprehenderit.</span>
+		<span>Sapiente, similique, repudiandae, facilis aliquid perferendis nam voluptatibus deleniti sit accusantium possimus tenetur pariatur odit obcaecati distinctio amet sequi perspiciatis officia! Minima, aspernatur velit officia tempore accusamus neque maiores doloremque.</span>
+	</p>
+	<p class="rojo">
+		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, laudantium iure hic ea rem autem cumque dolorum a vel ratione excepturi animi ad quidem temporibus provident labore accusantium neque vero?</span>
+		<span>Temporibus, porro, voluptates, laborum mollitia neque nihil laboriosam aliquam in consequatur doloremque iure aliquid iste ratione veritatis optio possimus illo fugiat repudiandae. Voluptates, dolore numquam possimus saepe nihil ducimus nulla!</span>
+		<span>Voluptas, modi, quis, magni quisquam possimus perspiciatis ad velit esse facere qui expedita accusamus sint nobis quibusdam incidunt accusantium laborum laudantium porro ut itaque. Facilis neque deserunt ex nisi repudiandae!</span>
+		<span>Aspernatur, impedit, adipisci, ad laborum sapiente nihil natus voluptas fuga cum repellendus culpa minima omnis nobis suscipit totam qui eligendi inventore architecto repudiandae cupiditate eum nesciunt consectetur facere repellat accusantium.</span>
+	</p>
+		</section>
+	
+</fieldset>
+
+
+</body>
+</html>

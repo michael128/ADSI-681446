@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Border-Radius - Css3</title>
+	<style>
+	section#bordes1{
+		border:2px solid #aaa;
+		width: 250px;
+		height: 120px;
+		/*Forma Larga border radius*/
+		border-top-left-radius: 10px;
+		border-top-right-radius: 30px;
+		border-bottom-right-radius:50px;
+		border-bottom-left-radius:70px;
+	}
+	section#bordes2{
+		border:2px solid #aaa;
+		width: 250px;
+		height: 120px;
+		/*Forma Corta border radius*/
+		border-radius: 10px 30px 50px 70px;
+	}
+	section#bordes3{
+		border:2px solid #aaa;
+		width: 200px;
+		height: 200px;
+		/*forma para circunferencia*/
+		border-radius: 50%;
+	}
+	section#bordes4{
+		border:2px solid #aaa;
+		width: 250px;
+		height: 120px;
+		/*Forma Corta border radius*/
+		border-radius: 0px 40px;
+	}
+	section#bordes5{
+		border:2px solid #aaa;
+		width: 250px;
+		height: 120px;
+		/*Forma Corta border radius*/
+		border-radius: 40px 0px;
+	}
+	</style>
+</head>
+<body>
+
+	<h1>Border-Radius - Css3</h1>
+	
+	<fieldset>
+		<legend><h1>Forma Larga</h1></legend>
+		<section id="bordes1"></section>
+	</fieldset>
+<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<fieldset>
+		<legend><h1>Forma Corta (shorthand)</h1></legend>
+		<section id="bordes2"></section>
+	</fieldset>
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+	<fieldset>
+		<legend><h1>Forma circulo: 50%</h1></legend>
+		<section id="bordes3"></section>
+	</fieldset>
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<fieldset>
+		<legend><h1>Forma: 0px 40px;</h1></legend>
+		<section id="bordes4"></section>
+	</fieldset>
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<fieldset>
+		<legend><h1>Forma: 40px 0px;</h1></legend>
+		<section id="bordes5"></section>
+	</fieldset>
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+</html>

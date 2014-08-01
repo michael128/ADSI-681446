@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Background-size</title>
+	<style>
+	fieldset{
+		border: 2px solid silver;
+		height: 600px;
+		margin:20px auto;
+		width: 800px;
+		background-image: url(imgs/bugati.jpg)  ;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+	fieldset.bg1{ background-size: 300px;}
+	fieldset.bg2{ background-size: 50%;}
+	fieldset.bg3{ background-size: cover;}
+	fieldset.bg4{ background-size: contain;}
+	</style>
+</head>
+<body>
+	<h1>Background-size</h1>
+<!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+ <fieldset class="bg1">
+ 	<legend><h1>background-size: 300px;</h1></legend>
+ </fieldset>
+<!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+<fieldset class="bg2">
+ 	<legend><h1>background-size: 50%;</h1></legend>
+ </fieldset>
+<!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+<fieldset class="bg3">
+ 	<legend><h1>background-size: cover;</h1></legend>
+ </fieldset>
+ <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+ <fieldset class="bg4">
+ 	<legend><h1>background-size: contain;</h1></legend>
+ </fieldset>
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+ </body>
+</html>

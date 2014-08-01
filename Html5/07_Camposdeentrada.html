@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Campos de entrada-html5</title>
+</head>
+<body>
+	<h1>Campos de entrada-html5</h1>
+	<br>
+	<h1>autocompletado</h1>
+	<form method="post" autocomplete="on">
+	<label for="nombre">Escriba su nombre</label>
+	<input type="text" name="nombre" autocomplete="on">
+	<input type="submit">
+	</form>
+	<h1>Enfoque Automatico</h1>
+	<label for="ciudad">ciudad</label>
+	<input type="text" name="ciudad" autofocus>
+	<input type="submit" autofocus>
+	<h1>formulario</h1>
+	<form method="post">
+    <label for="historia1">Historia</label>
+		<textarea name="historia1" id="historia" cols="30" rows="10"></textarea>
+	</form>
+	<h1>Acción de Formulario</h1>
+	<form action="https://www.facebook.com/">
+ 	facebok pais:<input type="text" name="pais" value="Colombia">
+	<input type="submit" value="Enviar">
+	</form>
+
+   <h1>form enctype</h1>
+   <form action="demo_post_enctype.asp"
+	method="post" enctype="multipart/form-data">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+  <input type="submit" value="Submit">
+	</form> 
+
+	<h1>form method</h1>
+	<form  method="get">
+   apellido<input type="text" name="apellido"><br>
+  nombre<input type="text" name="nombre"><br>
+  <input type="submit" value="Enviar">
+</form>
+
+	<h1>form novalidate</h1>
+	<form action="demo_form.asp" novalidate>
+	 <input type="email" name="michael@hotmail.com" value="michael@hotmail.com">
+	<input type="submit">
+	</form>
+
+	<h1>form target</h1>
+	<form action="https://www.facebook.com/" target="_blank">
+ 	facebok <input type="text" name="face" value="face">
+	<input type="submit" value="Enviar">
+	</form>
+	
+	<h1>Largo - Ancho</h1>
+
+	<input type="image" src="imgs/callofduty.jpg" widht="300" height="300">
+
+	<h1>Lista</h1>
+	<input list="elementos" value="Elementos">
+	<datalist id="elementos">
+    <option value="agua">agua</option>
+    <option value="fuego">fuego</option>
+    <option value="aire">aire</option>
+    <option value="tierra">tierra</option>
+    </datalist>
+
+    <h1>minimo - maximo</h1>
+
+	<input type="number" min="0" max="100" >
+
+	<h1>Multiple</h1>
+
+	<select name="Departamentos" multiple="multiple" size="5">
+    <option value="">Seleccione una ciudad</option>
+	<option value="barranquilla">barranquilla</option>
+	<option value="caldas">caldas</option>
+	<option value="quindio">quindio</option>
+	<option value="bucaramanga">bucaramanga</option>
+	<option value="antioquia">antioquia</option>
+	<option value="neiva">neiva</option>
+	<option value="huila">huila</option>
+	<option value="manizales">manizales</option>
+	</select>
+	</form>
+
+	<h1>place holder</h1>
+	<form  method="get">
+   apellido<input type="text" name="apellido" placeholder="apellido" ><br>
+  nombre<input type="text" name="nombre" placeholder="nombre" ><br>
+   <input type="submit" value="Enviar">
+  </form>
+
+  <h1>required</h1>
+  <input type="text" name="usrname" required>
+  <input type="submit">
+
+  <h1>step</h1>
+  <input type="number" name="puntos" step="100">
+  <input type="number" min="0" max="100"  step="10">
+
+</body>
+</html>

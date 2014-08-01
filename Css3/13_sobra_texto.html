@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sombra en los textos Css3</title>
+	<style>
+	body{
+		font:16px sans-serif;
+	}
+	h1.txt1{
+		color:#ddd;
+		font-size: 3em;
+		text-shadow: 4px 4px 10px #000;
+	}
+	h1.txt2{
+		color:#8000FF;
+		font-size: 4em;
+		
+	}
+    
+    fieldset:last-child{
+    	background-color: #555;
+    	color:#ccc;
+    	-webkit-text-shadow: 4px 4px 4px #000;
+		   -moz-text-shadow: 4px 4px 4px #000;
+		    -ms-text-shadow: 4px 4px 4px #000;
+		     -o-text-shadow: 4px 4px 4px #000;
+		        text-shadow: 4px 4px 4px #000;
+
+    }
+	</style>
+</head>
+<body>
+	<h1>Sombra en los textos Css3</h1>
+	<fieldset>
+		<legend>Text:shadow=</legend>
+		<h1 class="txt1">lorem Ipsum Dolor</h1>
+	</fieldset>
+	<fieldset>
+		<legend>Text:shadow=</legend>
+		<h1 class="txt2">lorem ipsum Dolor</h1>
+	</fieldset>
+	<fieldset>
+		<legend>Text:shadow=</legend>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem omnis at placeat dolorum veniam quas nam, cum, optio, accusantium consequatur corporis eaque repellat possimus totam, excepturi voluptatem beatae maxime sequi.</p>
+	</fieldset>
+
+</body>
+</html>

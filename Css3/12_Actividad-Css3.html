@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Actividad - Css3</title>
+	<style>
+	h1{text-align: center; }
+ :root {
+			background: -webkit-radial-gradient(left, #fff, #999);
+			background:         radial-gradient(left, #fff, #999);
+		}
+		fieldset h1 {text-align: center;
+			border: 2px solid #FF8484;
+			margin-left: 130px;
+			font: bolder 2em/1em comic arial;
+		    background: -webkit-radial-gradient(bottom right, #F90000, #FFC6C6);
+     		background:      -o-radial-gradient(bottom right, #F90000, #FFC6C6);
+     		background:    -moz-radial-gradient(bottom right, #F90000, #FFC6C6);
+     		background:         radial-gradient(bottom right, #F90000, #FFC6C6);
+     		box-shadow: 20px 20px 100px #CC0000;
+     	}
+     fieldset{
+     	border: 2px solid #FF8484;
+     	margin:50px auto;
+     	width: 800px;
+     	height: 300px;
+     	border-radius: 10px; 
+     	box-shadow: 20px 20px 100px #AA0000;
+
+     	}
+     	fieldset{
+     		background: -webkit-radial-gradient(bottom right, #F90000, #FFC6C6);
+     		background:      -o-radial-gradient(bottom right, #F90000, #FFC6C6);
+     		background:    -moz-radial-gradient(bottom right, #F90000, #FFC6C6);
+     		background:         radial-gradient(bottom right, #F90000, #FFC6C6);
+     	} 
+     	fieldset input{
+     		border: 1px solid #FF0000;
+     		width: 230px;
+     		height: 40px;
+     		margin: 15px ;
+     		border-radius: 10px;
+     		font: bolder 1.2em/1em comic arial;
+     		box-shadow: 10px 10px 30px #9F0000;
+     		background: -webkit-radial-gradient(bottom right, #FFB7B7, #FFECEC);
+     	}
+     	fieldset input:focus{
+     		background: #D5D5FF;
+     		color: #fff;
+     		box-shadow: 10px 10px 50px #00f;
+     	}
+      input#limpiar, input#enviar{
+      	     border: 1px solid #B3B3FF;
+     		background: -webkit-radial-gradient(bottom right, #2020FF, #9797FF);
+     		color: #FFF;
+
+     	}
+     	input#limpiar:hover, input#enviar:hover{
+     		background:#FFF;
+     		color: #00f;
+     		box-shadow: 10px 10px 30px #00f;
+     	}
+	</style>
+</head>
+<body>
+	<h1>Actividad - Css3  </h1>
+    <form action="" method="post">
+	<fieldset autocomplete="on" >
+		<legend><h1>FORMULARIO DE CONTACTO</h1></legend>
+		<label for="nombre"></label>
+		<input type="text" id="nombre" name="nombre" placeholder="Nombre">
+		<label for="telefono"></label>
+		<input type="text" id="telefono" name="telefono" maxlength="7" placeholder="Tealefono">
+		<label for="celular"></label>
+		<input type="text" id="celular" name="celular" maxlength="10" placeholder="Celular">
+		
+		<label for="correo"></label>
+		<input type="email" id="correo" name="correo" required placeholder="Correo">
+		<label for="edad"></label>
+		<input type="number" id="edad" name="edad" max="120" min="1" placeholder="Edad">
+		<label for="genero"></label>
+		<input list="genero" placeholder="Genero">
+		<datalist id="genero">
+		<option value="masculino">Masculino</option>
+		<option value="femenino">Femenino</option>	
+		</datalist>
+		
+		<label for="dirección"></label>
+		<input type="text" name="dirección" id="dirección" placeholder="Dirección">
+		<input type="reset" value="Limpiar" id="limpiar">
+		<input type="submit" value="Enviar" id="enviar">
+   </fieldset>
+   </form>
+</body>
+</html>

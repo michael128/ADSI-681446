@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Transiciones Multiple a un elemeneto</title>
+	<style>
+	body{
+		font: 16px arial;}
+		nav.menu{
+			margin: 0px auto;
+			width: 240px;
+		}
+		nav.menu li{
+			border: 2px solid #B30000;
+			background-color: #FF8080;
+			margin: 20px;
+			padding: 20px;
+			list-style: none;
+			height: 100px;
+			font: 5em arial;
+			color: #fff;
+			text-align: center;
+			border-radius: 50%;
+
+			-webkit-transition: width 1s, height 1s, -webkit-transform 2s;
+			        transition: width 1s, height 1s, transform 2s;
+		}
+		nav.menu li:hover{
+			cursor: pointer;
+			height: 140px;
+			width: 140px;
+
+			transform: rotate(90deg);
+		}
+	
+	</style>
+</head>
+<body>
+	<h1>Transiciones Multiple a un elemeneto</h1>
+	<nav class="menu">
+		<ul>
+			<li>A</li>
+			<li>D</li>
+			<li>S</li>
+			<li>I</li>
+			
+		</ul>
+	</nav>
+</body>
+</html>

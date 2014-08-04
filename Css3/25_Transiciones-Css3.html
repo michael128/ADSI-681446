@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Transitions(Propiedad, Tiempo)</title>
+	<style>
+	body{
+		font: 25px comic-arial;
+	}
+	ul.menu{
+		margin: 0px auto;
+		list-style: none;
+		padding: 0px;
+	}
+	ul.menu li{
+		background-color: #8282FF;
+		color: #fff;
+		width: 220px;
+		height: 80px;
+		font-size: 2em;
+
+		-webkit-transition: width 1s;
+		-o-transition: width 1s;
+		transition: width 1s;
+		margin-bottom: 4px;
+		text-align: center;
+	}
+	ul.menu li:hover {
+		width: 300px;
+		cursor: pointer;
+	}
+	</style>
+</head>
+<body>
+	<h1>Transitions(Propiedad, Tiempo)</h1>
+	<ul class="menu">
+		<li>Inicio</li>
+		<li>Nosotros</li>
+		<li>Contactos</li>
+		<li>Inicio</li>
+	</ul>
+</body>
+</html>

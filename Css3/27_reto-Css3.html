@@ -48,13 +48,15 @@
 		        text-shadow: 8px 8px 4px #000;
 
 
-		-webkit-transition: width 1s, height 1s, -webkit-transform 2s;
-			            transition: width 1s, height 1s, transform 2s;
+		-webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+			            transition: width 2s, height 2s, transform 2s;
 	}
 	p~ul:hover{
 		cursor: pointer;
-		transform: rotatey(360deg);
-		transform: rotatex(360deg) 
+		
+		transform: rotate(90deg) rotatex(180deg) rotatey(180deg); 
+		width: 255px;
+		height: 255px;
 
 		
 	}

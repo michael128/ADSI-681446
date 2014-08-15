@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<title>Media Queries CSS3</title>
+	<style>
+		body {
+			background-color: #4b984d;
+			font: 16px sans-serif;
+		}
+		section#page {
+			margin: 0 auto;
+			width: 960px;
+		}
+		section#page article {
+			background-color: #214422;
+			-webkit-border-radius: 50%;
+					border-radius: 50%;
+			color: #fff;
+			display: inline-block;
+			font-size: 0.7em;
+			height: 230px;
+			vertical-align: top;
+			width: 230px;
+		}
+		section#page article h2 {
+			margin-top: 40px;
+			text-align: center;
+		}
+		section#page article p {
+			margin: 0 auto;
+			text-align: justify;
+			width: 180px;
+		}
+		@media screen and (max-width: 768px) {
+			section#page {
+				width: 480px;
+			}
+			section#page article:nth-child(1n+4) {
+				margin-top: 4px;
+			}
+			section#page article {
+				-webkit-animation: animarArticles 1s ease-in;
+						animation: animarArticles 1s ease-in;
+			}
+			@-webkit-keyframes animarArticles {
+				0% {
+					-webkit-transform: scale(0);
+					opacity: 0;
+				}
+				90% {
+					-webkit-transform: scale(1.1);
+					opacity: 0.9;
+				}
+				100% {
+					-webkit-transform: scale(1);
+					opacity: 1;
+				}
+			}
+		}
+		@media screen and (max-width: 420px) {
+			section#page {
+				width: 240px;
+			}
+			section#page article:nth-child(1n+4) {
+				margin-top: 0;
+			}
+			section#page article {
+				-webkit-animation: animarArticle 1s ease-in;
+						animation: animarArticle 1s ease-in;
+				margin-bottom: 4px;
+			}
+			@-webkit-keyframes animarArticle {
+				0% {
+					-webkit-transform: rotate(0deg);
+					opacity: 0;
+				}
+				90% {
+					-webkit-transform: rotate(180deg);
+					opacity: 0.9;
+				}
+				100% {
+					-webkit-transform: rotate(0deg);
+					opacity: 1;
+				}
+			}
+		}
+	</style>
+</head>
+<body>
+	<section id="page">
+		<h1>Media Queries CSS3</h1>
+		<article>
+			<h2>Lorem Ipsum 1</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi cum dicta velit quae iste, id possimus laborum quo voluptates asperiores odit consequatur deserunt labore tempora voluptatem quis officiis modi aspernatur.
+			</p>
+		</article>
+		<article>
+			<h2>Lorem Ipsum 2</h2>
+			<p>
+				Fuga excepturi cumque molestiae repellendus iure atque blanditiis ratione deleniti eaque, suscipit saepe reiciendis non eveniet harum deserunt accusamus odio, commodi molestias nihil fugiat in laboriosam quidem expedita laborum. Error.
+			</p>
+		</article>
+		<article>
+			<h2>Lorem Ipsum 3</h2>
+			<p>
+				Tenetur cum, laboriosam eius consectetur, dolore, eveniet quisquam inventore pariatur aliquam possimus ad commodi. Fugiat expedita, mollitia quod corporis itaque quasi aliquam illum, incidunt, voluptates aliquid eius facere culpa quam.
+			</p>
+		</article>
+		<article>
+			<h2>Lorem Ipsum 4</h2>
+			<p>
+				Inventore molestiae exercitationem dolorem veniam aliquam repellat quia libero provident, magni aperiam cum hic laudantium perferendis iure incidunt expedita commodi nam cupiditate iste eaque. Eum nostrum aliquid, unde reiciendis architecto.
+			</p>
+		</article>
+	</section>
+</body>
+</html>

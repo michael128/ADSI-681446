@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewpoprt" content="width">
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	body{
+		background-color: #CCFFCC;
+		font: 16px arial-comic;
+	}
+	
+	section#page{
+		margin: 0px auto;
+		width: 960px;
+	}
+	section#page article{
+		background-color: #008000;
+		border: 2px solid #004200;
+		display: inline-block;
+		width: 230px;
+		height: 230px;
+		color: #fff;
+		vertical-align: top;
+		font-size: 0.8em;
+		-webkit-border-radius:50%;
+				border-radius:50%;
+	}
+	section#page article h1{
+		text-align: center;
+	}
+	section#page article p{
+		width: 180px;
+		margin: 0px auto;
+		text-align: justify;
+	}
+	/*768px*/
+	@media screen and (max-width: 768px) {
+	    section#page{
+	    	width: 480px;
+	    }
+	     section#page article{
+	    	margin-bottom: 4px;
+
+	    	-webkit-animation: animarart 2s ease-in;
+	    			animation: animarart 2s ease-in;
+	    }
+	    @-webkit-keyframes animarart{
+	    	0%{opacity:0; -webkit-transform: scale(0.8) rotate(0deg);
+	          transform: scale(0.8) rotate(0deg);
+
+	      }
+	        90%{opacity:0.5; -webkit-transform: scale(1.5) rotate(180deg);
+	          transform: scale(1.5) rotate(180deg);} 
+	          
+	        100%{opacity:1; -webkit-transform: scale(1) rotate(360deg);
+	          transform: scale(1) rotate(360deg);} 
+
+	    }
+	}
+
+	/*420*/
+	@media screen and (max-width: 420px) {
+	    section#page{
+	    	width: 240px;
+	    }
+	     section#page article{
+	    	margin-bottom: 4px;
+	    }
+	}
+
+	</style>
+</head>
+<body>
+	<section id="page">
+		<h1>Media Queries - Css3</h1>
+		<article>
+			<h1>lorem ipsum1</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa eius nemo, excepturi mollitia voluptatum eligendi laboriosam temporibus nobis iste reprehenderit, ab in quas, dolore earum impedit debitis qui tempora, error.</p>
+		</article>
+		<article>
+			<h1>lorem ipsum2</h1>
+			<p>Labore voluptatibus in quaerat modi omnis iure, reiciendis, doloribus assumenda dignissimos a fugit, distinctio numquam pariatur nobis temporibus necessitatibus explicabo sunt quos animi veniam similique nisi eum. Repudiandae, molestias, error!</p>
+		</article>
+		<article>
+			<h1>lorem ipsum3</h1>
+			<p>A quasi, fugiat blanditiis nobis nisi neque architecto modi tenetur ex cupiditate dolores excepturi odit necessitatibus, autem perferendis ducimus, reprehenderit officiis eius porro. Aliquam consequatur recusandae, a ratione laudantium necessitatibus.</p>
+		</article>
+		<article>
+			<h1>lorem ipsum4</h1>
+			<p>Aliquam deleniti, itaque cum inventore quos est nisi odio neque. Quibusdam eaque adipisci vero, maxime alias veniam corporis consequuntur cum dolorum optio! Velit ducimus architecto cupiditate, nulla, dicta quos tenetur.</p>
+		</article>
+	</section>
+</body>
+</html>

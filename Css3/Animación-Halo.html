@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Animation - Css - 3 - halo</title>
+	<style>
+	@font-face{
+		font-family: 'transform';
+		src: url('fonts/Transform.ttf');
+	}
+	body{
+		font: 18px 'transform';
+
+		background:   -webkit-linear-gradient(top , #000, #808080);
+		background:    -moz-linear-gradient(top, #000, #808080);
+		background:     -ms-linear-gradient(top, #000, #808080);
+		background:      -o-linear-gradient(top, #000, #808080);
+		background:         linear-gradient(top, #000, #808080);
+	}
+	section#halo4{
+		/*overflow: hidden;*/
+		border: 10px double #0144C0;
+		width: 1024px;
+		height: 700px;
+		margin: 50px auto;
+		position: relative;
+
+
+
+	
+		   -webkit-box-shadow: 10px 10px 50px 20px #1063FE inset;
+		      -moz-box-shadow: 10px 10px 50px 20px #1063FE inset;
+		       -ms-box-shadow: 10px 10px 50px 20px #1063FE inset;
+		        -o-box-shadow: 10px 10px 50px 20px #1063FE inset;
+	              -box-shadow: 10px 10px 50px 20px #1063FE inset;
+
+	        border-radius: 10px;
+
+	        background-image: url(imgs/city.png);
+			-webkit-animation: animarhalo 4s  ease-in;
+					animation: animarhalo 4s  ease-in;
+}
+
+			@-webkit-keyframes animarhalo{
+				0%{opacity:0; top:-800px;}
+				50%{opacity: 0.2; top: 0px;}
+				100%{opacity: 1; top: 0px;}
+			}	
+
+			keyframes animarhalo{
+				0%{opacity:0; top:-800px;}
+				50%{opacity: 0.5; top: 0px;}
+				100%{opacity: 1; top: 0px;}
+			}	
+			
+			
+
+			section#halo4 h1{
+				font-size: 8em;
+				z-index: 1000;
+				text-align: center;
+				color: #0097B2;
+				position: relative;
+				top: -150px;
+
+
+				       -webkit-text-shadow: 20px 20px 10px #000;
+				          -moz-text-shadow: 4px 4px 10px #004855;
+			     	       -ms-text-shadow: 4px 4px 10px #004855;
+				            -o-text-shadow: 4px 4px 10px #004855;
+				               text-shadow: 4px 4px 10px #004855;
+	    -webkit-animation: animarhalos 8s ease-in ;               
+				animation: animarhalos 8s ease-in ;
+}
+@-webkit-keyframes animarhalos{
+	0% { opacity: 0; transform: rotatex(0deg);  top:-800px;}
+	30%{ opacity: 1; transform: rotatex(180deg); top:-800px;}
+	100%{ opacity: 1; transform: rotatex(360deg); top: 0px;}
+}
+
+section.nave {
+	height: 320px;
+	width: 500px;
+	display: inline-block;
+	background-image: url(imgs/nave1.png);
+	background-repeat: no-repeat;
+	position: relative;
+	top: -400px;
+	left: -450px;
+	z-index: 2;
+
+
+	-webkit-animation: animarNave 4s ease-in 6s infinite;               
+		    animation: animarNave 4s ease-in 6s infinite;
+}
+
+@-webkit-keyframes animarNave {
+	0% {left:1200px; transform: rotatex(0deg) }
+	50% { transform: rotatex(180deg)}
+	100% { transform: rotatex(360deg)}
+
+}
+
+section.explosion{
+	display: inline-block;
+	width: 512px;
+	height: 512px;
+	background-image: url(imgs/explosion.png);
+
+}
+
+	</style>
+</head>
+<body>
+	<Section id="halo4">
+	<h1>Video gamers</h1>
+		<section class="nave"></section>
+		<section class="explosion"></section>
+
+	</Section>
+</body>
+</html>

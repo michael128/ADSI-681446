@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Reto - Animación - Css3</title>
+	<style>
+	body{
+		background: -webkit-radial-gradient(top , #000, #C0C0C0);
+	}
+	* , html {
+		margin: 0px auto;
+
+	}
+		@font-face{
+			font-family: "Transform";
+			src: url('fonts/Transform.ttf');
+		}
+		@font-face{
+			font-family: "CaviarDreams";
+			src: url('fonts/CaviarDreams');
+		}
+	section#futuro{
+
+		border: 4px solid black;
+		width: 1280px;
+		height: 600px;
+		overflow: hidden;
+		background-image: url(imgs/futuro.jpg);
+		background-repeat: no-repeat;
+		color: #007488;
+		font: 3em 'Transform';
+		text-shadow: 4px 4px 4px #00C7EA;
+		z-index: 1;
+
+		-webkit-animation: animarFuturo 8s linear ;
+	}
+	@-webkit-keyframes animarFuturo{
+	0%{opacity: 0};
+	50%{opacity: 1};
+	100%{opacity: 1};
+	}
+
+	section#futuro h1{
+		
+		z-index: 200;
+		position: relative;
+		top:-300px;
+		left: 400px;
+		-webkit-animation: animarFuturos 14s linear ;
+	}
+
+	@-webkit-keyframes animarFuturos{
+	 0%   {font-size: 0em left:0px; top:0px;}
+    25%  {font-size: 0.5em  left:50px; top:0px;}
+    50%  {font-size: 1em  left:100px; top:500px;}
+    75%  {font-size: 2em  left:0px; top:200px;}
+    100% {font-size: 3em left:0px; top:400px;}
+	}
+
+	article.nave{
+	 width: 830px;
+	 height: 266px;
+	 background-image: url(imgs/nave.png);
+	 float: right;
+	 z-index: 2;
+	 position: relative;
+	
+	 -webkit-animation: animarNave 6s linear infinite;
+	}
+	@-webkit-keyframes animarNave{
+	 0%   { left:1000px; top:0px;}
+	 50%   { left:0px; top:0px;}
+    100% {  left:100px; top:0px;}
+	}
+
+	article.halo{
+		
+		width: 400px;
+		height: 503px;
+		background-image: url(imgs/halo2.png);
+		background-repeat: no-repeat;
+		background-position: left;
+	    display: inline-block;
+	    z-index: 2;
+	    position: relative;
+	    top:-80px;
+	    -webkit-animation: animarHalo 8s linear ;
+		}
+		@-webkit-keyframes animarHalo{
+	 0%   { left:900px; top:0px;}
+   
+    50%  {  left:0px; top:0px;}
+    
+    100% {  left:0px; top:0px;}
+	}
+	article.h1{
+			
+		width: 400px;
+		height: 503px;
+		background-image: url(imgs/halo1.png);
+		background-repeat: no-repeat;
+		background-position: left;
+		background-size:700px;
+		display: inline-block;
+		z-index: 2;
+		position: relative;
+	    top:-600px;
+	    right: -880px; 
+	    -webkit-animation: animarHalos 3s linear 
+		}
+		@-webkit-keyframes animarHalos{
+	 0%   { left:0px; top:-600px;}
+    100% {  left:800px; top:0px;}
+	}
+	article.h3{
+			
+		width: 1270px;
+		height: 900px;
+		background-image: url(imgs/explosio.png);
+		background-size: 400px;
+		display: inline-block;
+		z-index: 100;
+		position: relative;
+		top:-1200px;
+		
+	
+		}
+	</style>
+</head>
+<body>
+	<h1>Reto - Animación - Css3</h1>
+	<section id="futuro">
+	<article class="nave"></article>
+		<h1>Bienvenidos al futuro</h1>
+		
+	<article class="halo"></article>
+	
+	<article class="h1"></article>
+	<article class="h3"></article>
+	
+	</section>
+</body>
+</html>

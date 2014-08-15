@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<title>Transition CSS3</title>
+	<style>
+		body { font: 16px sans-serif; }
+		ul.menu {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		ul.menu li {
+			background-color: #378ec2;
+			color: #fff;
+			font-size: 1.4em;
+			height: 60px;
+			margin-bottom: 4px;
+			text-align: center;
+			-webkit-transition: width 1s, height 1s;
+			   -moz-transition: width 1s, height 1s;
+				-ms-transition: width 1s, height 1s;
+				 -o-transition: width 1s, height 1s;
+					transition: width 1s, height 1s;
+			width: 200px;
+		}
+		ul.menu li:hover:nth-child(even) {
+			height: 70px;
+			width: 300px;
+		}
+		ul.menu li:hover:nth-child(odd) {
+			height: 50px;
+			width: 100px;
+		}
+	</style>
+</head>
+<body>
+	<h1>transition(propiedad, tiempo)</h1>
+	<ul class="menu">
+		<li>Inicio</li>
+		<li>Nosotros</li>
+		<li>Servicios</li>
+		<li>Contacto</li>
+	</ul>
+</body>
+</html>

@@ -1,43 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<title>Transformciones 3D</title>
+	<meta charset="utf-8" />
+	<title>Transform 3D CSS3</title>
 	<style>
-	fieldset{
-		padding: 50px;
-		margin: 0px auto;
-		width: 700px;
-	}
-	section{
-		font:  2em sans-serif;
-		border:4px solid #666;
-		background-color: #ddd;
-		width: 400px;
-		height: 200px;
-		
-	}
-	.elem1 {
-		-webkit-transform: rotatex(160deg);
-		        transform: rotatex(160deg);
-	}
-	.elem2 {
-		-webkit-transform: rotatey(160deg);
-		        transform: rotatey(160deg);
-	}
+		fieldset {
+			margin: 0 auto;
+			padding: 50px;
+			width: 700px;
+		}
+		section {
+			background-color: #ddd;
+			border: 4px solid #666;
+			font: 2em sans-serif;
+			height: 200px;
+			text-align: center;
+			width: 400px;
+		}
+		.elem1 {
+			-webkit-transform: rotateX(180deg);
+			   -moz-transform: rotateX(180deg);
+				-ms-transform: rotateX(180deg);
+				 -o-transform: rotateX(180deg);
+					transform: rotateX(180deg);
+		}
+		.elem2 {
+			-webkit-transform: rotateY(180deg);
+			   -moz-transform: rotateY(180deg);
+				-ms-transform: rotateY(180deg);
+				 -o-transform: rotateY(180deg);
+					transform: rotateY(180deg);
+		}
 	</style>
 </head>
 <body>
-	<h1>Transformciones 3D</h1>
-	<!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+	<h1>Transform 3D CSS3</h1>
 	<fieldset>
-		<legend><h1>rotatex(90deg)</h1></legend>
-		<section class="elem1">Elemento</section>
+		<legend>
+			<h2>rotateX(90deg)</h2>
+		</legend>
+		<section class="elem1">ELEMENTO</section>
 	</fieldset>
-
 	<fieldset>
-		<legend><h1>rotatey(90deg)</h1></legend>
-		<section class="elem2">Elemento</section>
+		<legend>
+			<h2>rotateY(90deg)</h2>
+		</legend>
+		<section class="elem2">ELEMENTO</section>
 	</fieldset>
 </body>
 </html>

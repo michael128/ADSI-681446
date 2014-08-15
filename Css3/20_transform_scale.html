@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<title>Transform Scale CSS3</title>
+	<style>
+		body {
+			font: 16px sans-serif;
+		}
+		fieldset {
+			margin-bottom: 100px;
+		}
+		section {
+			background-color: #edbc83;
+			border: 4px solid #a8512a;
+			font-size: 2em;
+			height: 100px;
+			margin: 0 auto;
+			text-align: center;
+			width: 200px;
+		}
+		section.box1 {
+			-webkit-transform: scale(2,2);
+					transform: scale(2,2);
+		}
+		section.box2 {
+			-webkit-transform: scale(0.5,0.5);
+					transform: scale(0.5,0.5);
+		}
+		section.box3 {
+			-webkit-transform: scaleX(4);
+					transform: scaleX(4);
+		}
+	</style>
+</head>
+<body>
+	<h1>Transform Scale CSS3</h1>
+	<fieldset>
+		<legend>
+			<h2>scale(2,2)</h2>
+		</legend>
+		<section class="box1">CAJA</section>
+	</fieldset>
+	<fieldset>
+		<legend>
+			<h2>scale(0.5,0.5)</h2>
+		</legend>
+		<section class="box2">CAJA</section>
+	</fieldset>
+	<fieldset>
+		<legend>
+			<h2>scaleX(4)</h2>
+		</legend>
+		<section class="box3">CAJA</section>
+	</fieldset>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<title>Transform Skew CSS3</title>
+	<style>
+		body {
+			font: 16px sans-serif;
+		}
+		fieldset {
+			margin-bottom: 50px;
+			padding: 20px;
+		}
+		section {
+			background-color: #a8f0af;
+			border: 4px solid #229f2c;
+			font-size: 3em;
+			height: 150px;
+			margin: 0 auto;
+			text-align: center;
+			width: 200px;
+		}
+		section.box1 {
+			-webkit-transform: skew(10deg,40deg);
+					transform: skew(10deg,40deg);
+		}
+		section.box2 {
+			-webkit-transform: skewX(45deg);
+					transform: skewX(45deg);
+		}
+		section.box3 {
+			-webkit-transform: skewY(120deg);
+					transform: skewY(120deg);
+		}
+	</style>
+</head>
+<body>
+	<h1>Transform Skew CSS3</h1>
+	<fieldset>
+		<legend>
+			<h2>Skew(10deg,40deg)</h2>
+		</legend>
+		<section class="box1">CAJA</section>
+	</fieldset>
+	<fieldset>
+		<legend>
+			<h2>SkewX(45deg)</h2>
+		</legend>
+		<section class="box2">CAJA</section>
+	</fieldset>
+	<fieldset>
+		<legend>
+			<h2>SkewY(120deg)</h2>
+		</legend>
+		<section class="box3">CAJA</section>
+	</fieldset>
+</body>
+</html>

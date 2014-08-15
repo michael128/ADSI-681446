@@ -16,7 +16,8 @@
 	<p id="texto" style="arial">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum nesciunt ducimus praesentium quisquam dolorum nihil id ullam laboriosam est possimus aperiam consequatur distinctio, esse repellat sapiente, nam, cumque. Animi, consequatur!
 	<br><br>
 	<button onclick="quitarparrafo();">Quitar Parrafo</button>
-	
+	<button onclick="aumentarTxt();">Aumentar texto</button>
+	<button onclick="reducirTxt();">Reducir texto</button>
 	</p>
 
 	<script>
@@ -33,9 +34,24 @@
  	//seleccionar el elemento html
  	//seleccionar el elemento html
  	//seleccionar el elemento html
+
+ 	// reducir texto o aumentar
+
  	var tt= 16;
  	var el= document.getElementById("texto")
+
+ 	function aumentarTxt()
+    {
+ 	tt = tt + 4;    //incrementamos el tamaño en 44
+ 	// aplicamos nuevo tamaño al elemento HTML
+ 	el.setAttribute("style","font-size:"+tt+"px;");
+    }
  	
+ 	function reducirTxt()
+    {
+ 	tt = tt - 4; //reducimos el tamaño en 44
+ 	el.setAttribute("style","font-size:"+tt+"px;");
+    }
 	</script>
 </body>
 </html>

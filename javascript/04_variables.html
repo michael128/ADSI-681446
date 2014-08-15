@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Variables - Js</title>
+	<style>
+     html { font: 62.5% sans-serif;}
+     body {font-size: 1.6rem;}
+
+     fieldset{
+     	height:100px;
+     	width:250px;
+     	margin:100px auto;
+     	padding:50px;
+     	border: 2px double #00771E;
+     }
+     output {
+     	font-size:3rem;
+     	color: #0a0;
+     }
+     input{
+		border: 2px double #00771E;
+		height:30px;
+		width:100px;
+		padding:4px;
+		font-size:3rem;
+     	color: #0a0;
+     }
+     button{
+     	height:30px;
+		width:100px;
+		padding:4px;
+     }
+	</style>
+</head>
+<body>
+	<h3>Variables - Js</h3>
+	<fieldset>
+		<legend>Sumar 2 Números</legend>
+		<input type="number" id="n1" min="0" max="99">
+		<input type="number" id="n2" min="0" max="99">
+		<button onclick="sumarNumeros();">Sumar</button>
+		<output id="respuesta"></output>
+	</fieldset>
+
+	<script>
+	function sumarNumeros() {
+		var n1 = document.getElementById('n1').value;
+		var n2 = document.getElementById('n2').value;
+		var re = document.getElementById('respuesta')
+		re.innerHTML = (parseInt(n1)+parseInt(n2))
+	}
+	</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Selectores avanzados CSS</title>
+	<style>
+	/*selector hijos*/
+     div>code {
+     	background-color: gray;
+     }
+     h2+code.amarillo{
+     	background-color: yellow;
+     }
+
+     input[type=button]{
+      background-color: green;
+     }
+   
+	</style>
+</head>
+<body>
+	<h1>Selectores avanzados CSS</h1>
+	<div>
+		<h2>selector hijos</h2>
+		<code>
+			div > code {<br>
+             background-color: gray;<br>
+             }
+		</code>
+	</div>
+
+	<div>
+		<h2>selector adyacente</h2>
+		<code class="amarillo">
+			h2+code.amarillo {<br>
+             background-color: yellow;<br>
+             }
+		</code>
+	</div>
+
+	<div>
+		<h2>selector Atributos</h2>
+		<code>
+			input[type:button] {<br>
+             background-color: green;<br>
+             }
+		</code>
+		<input type="button" value="boton1">
+		<input type="button" value="boton2">
+		<input type="button" value="boton3">
+		<input type="button" value="boton4">
+	</div>
+</body>
+</html>

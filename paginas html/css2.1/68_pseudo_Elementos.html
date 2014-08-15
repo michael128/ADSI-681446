@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pseudo-selectores-de-Elementos </title>
+	<style>
+	body {font: 16px tahoma;}
+	ul.manga li::before {content: "->"; }
+	ul.peliculas li::after { content: url(imgs/sena.jpg);}
+	</style>
+	
+	
+	
+</head>
+<body>
+	<h1>Pseudo-selectores-de-Elementos </h1>
+	<h2>li::before</h2>
+	<ul class="manga">
+		<li>naruto</li>
+		<li>Drangon ball</li>
+		<li>super campeones</li>
+		<li>radma 1/2</li>
+	</ul>
+	<h2>li::after</h2>
+	<ul class="peliculas">
+		<li>Malefica</li>
+		<li>Xmen 4 </li>
+		<li>Ladrona de libros</li>
+		<li>El lobo del wallstreet</li>
+	</ul>
+</body>
+</html>

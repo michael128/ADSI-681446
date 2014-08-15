@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tipo de Dato Vector js</title>
+</head>
+<body>
+	<h1>Tipo de dato Vector JS</h1>
+	<hr>
+	<nav></nav>
+	<script>
+		// vector con indice manual
+	var mtb = new Array();
+	    mtb[0] = "Trek";
+	    mtb[1] = "Giant";
+	    mtb[2] = "Specialized";
+	    mtb[3] = "Cannondale";
+	    mtb[4] = "scoth";
+	    // vector con indice automatico
+	    var vehiculos = new Array("Volkswagen", "Renault", "Mazda", "fiat");
+
+	    var ele = document.querySelector("nav");
+	    for (var i = 0; i < mtb.length; i++) {
+	    	ele.innerHTML += "<li>"+mtb[i]+"</li>";
+	    };
+	    
+	</script>
+</body>
+</html>

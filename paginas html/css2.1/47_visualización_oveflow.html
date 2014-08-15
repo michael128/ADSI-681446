@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Visualización - overflow - css</title>
+	<style>
+      div#caja{
+      	border:4px solid #00FFFF;
+      	width: 860px;
+      	margin:0 auto;
+      	padding: 20px;
+      }
+      div#caja div{
+      	background-color: #b5eff7; 
+      	border: 2px solid #000;
+      	padding: 4px;
+      	width: 260px;
+      	display:inline-block; 
+      	vertical-align: top;
+      	height: 320px;      }
+
+      	div#caja .c1{overflow: visible;}
+      	div#caja .c2{overflow: hidden;}
+      	div#caja .c3{overflow: scroll;}
+
+	</style>
+</head>
+<body>
+	<h1>Visualización - overflow - css</h1>
+	<div id="caja">
+		<div class="c1">
+			<h1>overflow: visible</h1>
+			<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, soluta, earum deleniti mollitia necessitatibus iure blanditiis cum est quos ex in atque qui nobis libero modi dolores enim veritatis repellendus.</span>
+			<span>Ducimus, placeat illum facilis quas numquam commodi officiis nulla illo ea harum quia enim repudiandae accusantium tenetur dicta nostrum ex quo odio similique officia voluptatibus rem veritatis nobis. Illum, illo!</span>
+			<span>Tempora, harum, voluptatem veritatis iure sint impedit ut eius dolor cum velit totam veniam unde error non consectetur repellat fugit quisquam nulla quasi debitis blanditiis similique nesciunt laborum voluptas soluta.</span>
+			<span>Rerum, molestiae, laudantium placeat quaerat modi magni quo non natus aliquid aliquam accusantium consequatur vero numquam ipsum velit quas eum labore sunt incidunt nobis nam eius minus similique voluptate nihil?</span>
+			<span>Molestiae, labore, animi consectetur inventore quos mollitia nobis iste in tempore provident aut eum illum nam quo cupiditate ea laudantium iusto cum! Necessitatibus, cum a quia quod iure sit voluptate.</span></p>
+		</div>
+		<div class="c2">
+			<h1>overflow: hiden</h1>
+			<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores enim illo dolorum consectetur beatae! Omnis, dicta, eum, rerum explicabo est temporibus perferendis soluta delectus accusantium tenetur quo maxime deserunt harum!</span>
+			<span>Saepe, reiciendis, fuga, vero odio voluptates doloremque facere aliquam fugit ab cum facilis sunt. Perspiciatis, fugiat eaque ullam cumque odio repellat delectus. Nihil, hic saepe dignissimos nostrum harum omnis sequi.</span>
+			<span>Earum, tenetur, perferendis, laudantium reiciendis voluptatum enim similique harum dolor deserunt esse tempora accusantium repudiandae velit provident eum eos corrupti. Modi, perferendis incidunt corrupti iure consequuntur nihil voluptatem delectus atque.</span>
+			<span>Vel, placeat sequi beatae possimus necessitatibus fugiat ipsam vero quae recusandae minus! Reprehenderit, adipisci, debitis quia voluptas magnam perspiciatis nihil explicabo omnis inventore voluptate cumque reiciendis non rem possimus commodi.</span>
+			<span>Expedita repellat doloribus aspernatur similique ipsam. Enim, sequi, voluptas, voluptate, alias nam ipsam earum optio harum quisquam aspernatur consequuntur quae corrupti inventore est dignissimos magnam dolorem? Tenetur ipsa aliquid quasi.</span></p>
+		</div>
+		<div class="c3">
+			<h1>overflow: scrol</h1>
+			<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, architecto, ducimus, voluptas, iusto molestias quo nulla corrupti aut sunt qui nam libero tempora ea nesciunt corporis aspernatur excepturi debitis quisquam!</span>
+			<span>Id quisquam voluptatem totam quae odio sequi vitae. Perspiciatis, provident voluptates nobis dolorum nemo ratione itaque reprehenderit! Fuga, similique, rerum, ipsum, atque debitis nisi ipsa nemo magnam culpa deserunt explicabo.</span>
+			<span>Dolore, laborum, enim praesentium eos voluptates voluptate error quisquam unde atque cum veniam id vitae sed iusto quos. Tenetur, debitis, quidem iste ullam sapiente ipsum facere aut dolore optio ea.</span>
+			<span>Commodi, sequi aperiam labore velit asperiores natus distinctio reprehenderit! Soluta, harum, sunt, obcaecati, labore earum accusantium quos aut quas amet fugiat maiores minima doloribus quis blanditiis asperiores. Nam, eum, veniam?</span>
+			<span>Cum, enim, autem, totam omnis esse dolor deleniti aperiam quos consequatur repellat a eligendi eveniet obcaecati facilis sit est iste ratione pariatur incidunt odit provident dolore nam numquam accusamus illo!</span></p>
+		</div>
+	</div>
+</body>
+</html>

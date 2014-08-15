@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Repetir fondo Css</title>
+<style>
+	div {
+		width: 800px;
+		height: 600px;
+		border:4px solid hsl(50,50%,0%) ;
+		margin: 20px auto;
+		background-image:  url(imgs/naruto.jpg);
+	}
+	div.box1{ background-repeat: repeat }
+	div.box2{ background-repeat: no-repeat; }
+	div.box3{ background-repeat: repeat-x; }
+	div.box4{ background-repeat:  repeat-y         }
+
+</style>
+
+</head>
+<body>
+	<h1>Repetir fondo Css</h1>
+	<div class="box1">
+		<h1>Repetir</h1>
+	</div>
+	<div class="box2">
+		<h1>No repetir</h1>
+	</div>
+	<div class="box3">
+		<h1>Repetir en x</h1>
+	</div>
+	<div class="box4">
+		<h1>Repetir en y</h1>
+	</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Texto- vertical alian</title>
+	<style>
+     
+    
+     div#cajas div{
+     	border: 2px solid red;
+     	margin: 10px;
+     	width: 200px;
+     	height: 120px;
+     	display: inline-block;
+
+     }
+div#cajas div.caja1 span { 
+	vertical-align: baseline;
+ 
+ }
+ div#cajas div.caja2 span { 
+	vertical-align: top;
+ 
+ }
+div#cajas div.caja3 span { 
+	vertical-align: 50px;
+ 
+ }
+
+
+
+
+
+	</style>
+</head>
+<body>
+
+<div id="cajas">
+	<div class="caja1">
+	<img src="imgs/ayuda.jpg" alt="" width="100">
+		<span>ayuda-baseline</span>
+	</div>
+
+		<div class="caja2">
+		<img src="imgs/ayuda.jpg" alt="" width="100">
+		<span>ayuda-top</span>
+		</div>
+		<div class="caja3">
+			<img src="imgs/ayuda.jpg" alt="" width="100">
+		<span>ayuda-middle</span>
+		</div>	
+</div>
+	
+</body>
+</html>

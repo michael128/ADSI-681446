@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<title>Visualización Overflow CSS</title>
+	<style>
+		div#caja {
+			border: 4px solid #18757f;
+			margin: 0 auto;
+			padding: 20px;
+			width: 860px;
+		}
+		div#caja div {
+			background-color: #b5eff7;
+			border: 2px solid #0f4a51;
+			display: inline-block;
+			height: 320px;
+			padding: 4px;
+			vertical-align: top;
+			width: 270px;
+		}
+		div#caja div.c1 { overflow: visible; }
+		div#caja div.c2 { overflow: hidden; }
+		div#caja div.c3 { overflow: scroll; }
+	</style>
+</head>
+<body>
+	<h1>Visualización Overflow CSS</h1>
+	<div id="caja">
+		<div class="c1">
+			<h1>overflow: visible</h1>
+			<p>
+				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, accusamus, saepe nihil quasi necessitatibus quod libero omnis ducimus repudiandae sunt alias itaque nostrum ab reiciendis deleniti ex voluptatum laborum id.</span>
+				<span>Reprehenderit, fugit, consequatur, doloremque eligendi est quaerat mollitia quasi asperiores architecto natus deleniti odio eveniet quam nisi at vel sapiente provident voluptatibus repudiandae autem dolore ipsum suscipit. Cum, ad, architecto.</span>
+				<span>Aliquid, inventore, ipsum, natus, praesentium sed laborum dolore illo libero ab molestiae odit in laudantium velit voluptatibus placeat sequi totam odio deserunt nihil officia nobis animi neque earum non repellat.</span>
+				<span>Sequi, labore, ab, non, libero iste recusandae eum quidem nostrum perspiciatis voluptates amet molestiae doloremque velit unde temporibus similique veritatis vel molestias aspernatur earum! Blanditiis a quos error maiores cumque!</span>
+				<span>Praesentium, repudiandae, fuga magni error hic maiores quidem beatae non minima laudantium porro doloremque perferendis possimus iusto facilis aspernatur assumenda. Perferendis, ut nemo aut magni quasi ab accusamus fugiat non.</span>
+			</p>
+		</div>
+		<div class="c2">
+			<h1>overflow: hidden</h1>
+			<p>
+				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, accusamus, saepe nihil quasi necessitatibus quod libero omnis ducimus repudiandae sunt alias itaque nostrum ab reiciendis deleniti ex voluptatum laborum id.</span>
+				<span>Reprehenderit, fugit, consequatur, doloremque eligendi est quaerat mollitia quasi asperiores architecto natus deleniti odio eveniet quam nisi at vel sapiente provident voluptatibus repudiandae autem dolore ipsum suscipit. Cum, ad, architecto.</span>
+				<span>Aliquid, inventore, ipsum, natus, praesentium sed laborum dolore illo libero ab molestiae odit in laudantium velit voluptatibus placeat sequi totam odio deserunt nihil officia nobis animi neque earum non repellat.</span>
+				<span>Sequi, labore, ab, non, libero iste recusandae eum quidem nostrum perspiciatis voluptates amet molestiae doloremque velit unde temporibus similique veritatis vel molestias aspernatur earum! Blanditiis a quos error maiores cumque!</span>
+				<span>Praesentium, repudiandae, fuga magni error hic maiores quidem beatae non minima laudantium porro doloremque perferendis possimus iusto facilis aspernatur assumenda. Perferendis, ut nemo aut magni quasi ab accusamus fugiat non.</span>
+			</p>
+		</div>
+		<div class="c3">
+			<h1>overflow: scroll</h1>
+			<p>
+				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, accusamus, saepe nihil quasi necessitatibus quod libero omnis ducimus repudiandae sunt alias itaque nostrum ab reiciendis deleniti ex voluptatum laborum id.</span>
+				<span>Reprehenderit, fugit, consequatur, doloremque eligendi est quaerat mollitia quasi asperiores architecto natus deleniti odio eveniet quam nisi at vel sapiente provident voluptatibus repudiandae autem dolore ipsum suscipit. Cum, ad, architecto.</span>
+				<span>Aliquid, inventore, ipsum, natus, praesentium sed laborum dolore illo libero ab molestiae odit in laudantium velit voluptatibus placeat sequi totam odio deserunt nihil officia nobis animi neque earum non repellat.</span>
+				<span>Sequi, labore, ab, non, libero iste recusandae eum quidem nostrum perspiciatis voluptates amet molestiae doloremque velit unde temporibus similique veritatis vel molestias aspernatur earum! Blanditiis a quos error maiores cumque!</span>
+				<span>Praesentium, repudiandae, fuga magni error hic maiores quidem beatae non minima laudantium porro doloremque perferendis possimus iusto facilis aspernatur assumenda. Perferendis, ut nemo aut magni quasi ab accusamus fugiat non.</span>
+			</p>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<title>Posicionamiento Flotante CSS</title>
+	<style>
+		div.padre {
+			border: 2px solid #f00;
+			margin: 0 auto;
+			padding: 40px;
+			width: 800px;
+		}
+		div.hijos {
+			border: 2px solid #000;
+			font-size: 8em;
+			height: 200px;
+			margin-bottom: 10px;
+			width: 300px;
+		}
+		.float-right {
+			float: right;
+		}
+	</style>
+</head>
+<body>
+	<h1>Posicionamiento Flotante CSS</h1>
+	<div class="padre">
+		<div class="hijos float-right">1</div>
+		<div class="hijos">2</div>
+		<div class="hijos">3</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Acceso a Metodos de los Objetos</title>
+</head>
+<body>
+	<h1>Acceso a Metodos de los Objetos</h1>
+	<hr>
+	<h2 id="mostrar"></h2>
+	<script>
+	var persona = {
+		nombre : "Jeremias",
+		apellido : "Sprinfield",
+		correo : "Jeremy@misena.edu.co",
+		imprimirDatos : function (){
+			var datos = this.nombre + " " +
+			            this.apellido + " " + this.correo;
+		return datos;
+		},
+
+		cambiarDatos : function (){
+			  this.nombre = "liza";
+			  this.apellido = "simpson";
+			  this.correo = "liz@misena.edu.co";
+		}
+	};
+
+		var elem = document.getElementById("mostrar");
+		persona.cambiarDatos();
+		elem.innerHTML = persona.imprimirDatos();
+	</script>
+</body>
+</html>

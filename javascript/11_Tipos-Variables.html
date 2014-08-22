@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tipos-Variables-Java Script</title>
+</head>
+<body>
+	<h1>Tipos-Variables-Java Script</h1>
+	<hr>
+	<div id="salida"></div>
+	<script>
+	var cadena = new String();
+	var numero = new Number();
+	var Booleano = new Booleano();
+	var arreglo = new Array();
+	var objeto = new Object();
+	var fecha = new date();
+
+	var elemento = document.getElementById("salida");
+
+	cadena = "hola Mundo ☺☻♥/♣♠•◘○";
+	numer = 1e3;
+	Booleano = true;
+	arreglo = new Array("Manizales", "pereira", "Medellin");
+	objeto = {nombre: "ADSI"};
+	
+
+	elemento.innerHTML = "La cadena es:"+cadena+"<br/>";
+	elemento.innerHTML += "El numero es: "+numero+"<br/>";
+	elemento.innerHTML += "El numero es: "+booleano+"<br/>";
+	elemento.innerHTML += "El numero es: "+arreglo.length+"Elementos<br/>";
+	elemento.innerHTML += "El numero es: "+objeto.nombre+"<br/>";
+	elemento.innerHTML += "El numero del dia es: "+fecha.getDay+"<br/>";
+
+	</script>
+</body>
+</html>

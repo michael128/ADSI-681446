@@ -15,12 +15,20 @@
 	<canvas id="aviso"></canvas>
 	<h2>Corazón</h2>
 	<canvas id="corazon"></canvas>
+	<!-- ////////////////////////Ensayos Canvas\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+	<!-- ////////////////////////Ensayos Canvas\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+	<!-- ////////////////////////Ensayos Canvas\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+	<h2>Cuadro</h2>
+	<canvas id="cuadro"></canvas>
+
+	     <!-- ////////////////////////Escript\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
 	<script>
 		var cn1 = document.getElementById("cuadrado");
 		var cn2 = document.getElementById("circulo");
 		var cn3 = document.getElementById("triangulo");
 		var cn4 = document.getElementById("aviso");
 		var cn5 = document.getElementById("corazon");
+
 
 		var cntx1  = cn1.getContext("2d");
 		var cntx2  = cn2.getContext("2d");
@@ -65,6 +73,17 @@
 		cntx5.bezierCurveTo(130,62.5,130,25,100,25);
 		cntx5.bezierCurveTo(85,25,75,37,75,40);
 		cntx5.fill();
+
+		<!-- ////////////////////////Ensayos Canvas\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+		var n1 = document.getElementById("cuadro")
+		var xnt1 = n1.getContext("2d")
+
+		xnt1.fillStyle= "#ff0"
+		xnt1.fillRect(0,0,100,100)
+
+
+
 	</script>
 </body>
 </html>

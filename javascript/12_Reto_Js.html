@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Reto - Js</title>
+	<style>
+	body{
+		background-color: #F5F5F3;
+	}
+	section#ruta{
+		border: 2px double #950000;
+		height: 500px;
+		margin: 0px auto;
+		background-image: url(imgs/Carretera.jpg);
+		background-size: cover;
+	}
+	section#ruta div.caja{
+
+		border: 2px solid #000;
+		display: inline-block;
+		height: 120px;
+		width:120px;
+		margin-top: 100px;
+		transform: rotate(30deg);
+		margin-left: 10px ;
+		background-size: cover;
+	}
+	</style>
+</head>
+<body>
+<h1>Objetos (Metodos y Atributos)</h1>
+<nav>
+	<h3>Datos Vehiculos</h3>
+	<ul id="datos"></ul>
+</nav>
+<section id="ruta">
+    <div id="paso1" class="caja"></div>
+ 	<div id="paso2" class="caja"></div>
+ 	<div id="paso3" class="caja"></div>
+ 	<div id="paso4" class="caja"></div>
+ 	<div id="paso5" class="caja"></div>
+ 	<div id="paso6" class="caja"></div>
+ 	<div id="paso7" class="caja"></div>
+ 	<div id="paso8" class="caja"></div>
+ 	<div id="paso9" class="caja"></div>
+ 	<div id="paso10" class="caja"></div>	
+</section>
+
+<script>
+	var cont = new Number();
+	    cont = 1;
+	var img = new String();
+		img = '';
+	var datos = new String();
+		datos = '';
+
+	var carro = {
+		marca : "fiat",
+		referencia : 500,
+		color : "rojo",
+		imagen : "imgs/Carro.png",
+	arrancar : function (cont){
+		img = "<img src="+this.imagen+" />";
+		document.getElementById("paso"+cont).innerHTML = img;
+		if (cont > 1) {
+			cont = cont -1;
+			document.getElementById("paso"+cont).innerHTML = "";
+		}
+	},
+	frenar : function (){
+		window.clearInterval();
+	}
+};
+
+datos = "<li>marca:"+carro.marca+"</li>";
+datos += "<li>referencia:"+carro.referencia+"</li>";
+datos += "<li>color:"+carro.color+"</li>";
+
+document.getElementById('datos').innerHTML = datos;
+
+setInterval(function(){
+	if(cont <= 10) {
+		carro.arrancar(cont);
+		cont++;
+		else {
+			carro.frenar();}
+		}
+	},1200);
+}
+</script>
+
+</body>
+</html>

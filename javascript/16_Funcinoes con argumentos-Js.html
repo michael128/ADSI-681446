@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Funciones-Js-Argumentos</title>
+</head>
+<body>
+	<h1>Funciones-Js--Argumentos</h1>
+	<fieldset>
+		<legend>Ingrese los números </legend>
+		<label for="suma">suma</label>
+		<input type="number" id="n1" min="1" max="1000">
+		<input type="number" id="n2" min="1" max="1000">
+		<button onclick="sumarNumeros();">Sumar</button>
+		<span id="respuesta"></span>
+		
+</fieldset>
+<script>
+	
+
+	function sumarNumeros() {
+	   var n1 = document.getElementById('n1').value;
+	   var n2 = document.getElementById('n2').value;
+	   var res = document.getElementById('respuesta');
+
+	   sumar(n1 , n2);
+	}
+	function sumar(n1, n2){
+		var respuesta = parseInt(n1) + parseInt(n2);
+		alert("La suma de"+n1+"y"+n2+"es:"+respuesta);
+		res.innerHTML = (parseInt(n1)+parseInt(n2));
+	}
+
+	
+	</script>	
+
+
+</body>
+</html>

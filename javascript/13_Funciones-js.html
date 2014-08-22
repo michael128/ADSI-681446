@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Funciones Js</title>
+</head>
+<body onload="sumarNumeros();">
+	<h1>Funsiones JS</h1>
+	<hr>
+	<h2 id="respuesta"></h2>
+
+	<script>
+	function sumarNumeros() {
+		var cont = 1;
+		var suma = 0;
+		
+
+		 intervalos suma = setInterval(function() {
+			suma += cont;
+			document.getElementById("respuesta").innerHTMl = suma;
+			elem.innerHTMl = "La suma de los 10 primeros nuemros es:"+suma;
+			cont++;
+			if (cont ==11) {
+				clearInterval(intervalosuma);
+			}
+		},500);
+	}
+	</script>
+	
+</body>
+</html>

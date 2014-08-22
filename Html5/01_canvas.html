@@ -20,6 +20,8 @@
 	<!-- ////////////////////////Ensayos Canvas\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
 	<h2>Cuadro</h2>
 	<canvas id="cuadro"></canvas>
+	<h2>Circulo</h2>
+	<canvas id="circullo"></canvas>
 
 	     <!-- ////////////////////////Escript\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
 	<script>
@@ -75,12 +77,22 @@
 		cntx5.fill();
 
 		<!-- ////////////////////////Ensayos Canvas\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+		//cuadro 								
+		var n1 = document.getElementById("cuadro");
+		var xnt1 = n1.getContext("2d");
 
-		var n1 = document.getElementById("cuadro")
-		var xnt1 = n1.getContext("2d")
+		
+		xnt1.fillStyle= "#ff0";
+		xnt1.fillRect(0,0,100,100);
 
-		xnt1.fillStyle= "#ff0"
-		xnt1.fillRect(0,0,100,100)
+		//circulo
+
+		var n2 = document.getElementById("circullo");
+		var xnt1 = n2.getContext("2d");
+
+		xnt1.fillStyle = "#0ff"
+		xnt1.beginPath();
+
 
 
 

@@ -21,16 +21,15 @@
 	function sumarNumeros() {
 	   var n1 = document.getElementById('n1').value;
 	   var n2 = document.getElementById('n2').value;
-	   var res = document.getElementById('respuesta');
-
-	   sumar(n1 , n2);
+	  sumar(n1 , n2);
 	}
 	function sumar(n1, n2){
-		var respuesta = parseInt(n1) + parseInt(n2);
-		alert("La suma de"+n1+"y"+n2+"es:"+respuesta);
+		var res = document.getElementById("respuesta");
+		var respuessta = parseInt(n1) + parseInt(n2);
+		alert("La suma de"+n1+"y"+n2+"es:"+respuessta);
 		res.innerHTML = (parseInt(n1)+parseInt(n2));
 	}
-
+	
 	
 	</script>	
 

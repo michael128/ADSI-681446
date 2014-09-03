@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Operadores de asignacións - Js</title>
+</head>
+<body>
+	
+	<hr>
+	<fieldset>
+		<legend>Operadores de asignación - Js</legend>
+		<input type="number" min="1" placeholder="x" id="x1">
+		<br>
+		<input type="number" min="1" placeholder="y" id="x2">
+
+		<select name="" id="operacion">
+			<option value="suma" >x+=y</option>
+			<option value="resta">-=</option>
+			<option value="multi">*=</option>
+			<option value="division">/=</option>
+			<option value="residuo">%=</option>
+		</select>
+		<br>
+
+		<button onclick="calcularOperación();">Calcular</button>
+
+		<h1 id="respuesta"></h1>
+	</fieldset>
+		
+		<script>
+		function sumar(x, y){
+			return(x+=y)
+		}
+		function restar(x, y){
+			return(x-=y)
+		}
+		function mulitiplicar(x, y){
+			return(x*=y)
+		}
+		function dividir(x, y){
+			return(x/=y)
+		}
+		function mod(x, y){
+			return(x%=y)
+		}
+
+		function calcularOperación() {
+			var res = document.getElementById("respuesta");
+			var x = parseInt(document.getElementById("x1").value);
+			var y = parseInt(document.getElementById("x2").value);
+			var op = document.getElementById("operacion").value;
+
+			if(op == "suma")     {	res.innerHTML = "la asignación x+=y es:"+sumar(x, y)		}
+			if(op == "resta")    {	res.innerHTML = "la asignación x-=y es:"+restar(x, y)		}
+			if(op == "multi")    {	res.innerHTML = "la asignación x*=y es:"+mulitiplicar(x, y)	}
+			if(op == "division") {  res.innerHTML ="la asignación x/=y es:"+dividir(x, y)		}
+			if(op == "residuo")  {	res.innerHTML = "la asignación x%=y es:"+mod(x, y)			}
+		}
+		</script>
+
+</body>
+</html>

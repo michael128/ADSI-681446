@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Operadores de Comparación</title>
+</head>
+<body>
+	<hr>
+	<fieldset>
+		<legend>Operadores de Comparación</legend>
+		<input type="number" placeholder="x" id="x1">
+		
+		<select name="" id="comparaciones">
+			<option value="x==">x==</option>
+			<option value="x===">x===</option>
+			<option value="x!=">x!=</option>
+			<option value="x!==">x!==</option>
+			<option value="X>">X></option>
+			<option value="X<">X< </option>
+			<option value="x>=">x>=</option>
+			<option value="x<=">x<=</option>
+		</select>
+		<input type="number" placeholder="y" id="y1">
+		<br>
+		<button onclick="calcularComparaciones();">Calcular</button>
+		<h1 id="respuesta"></h1>
+	</fieldset>
+
+	<script>
+		function calcularComparaciones(){
+			var res= document.getElementById("respuesta");
+			var x = parseInt(document.getElementById("x1").value);
+			var y = parseInt(document.getElementById("y1").value);
+			var comp = document.getElementById("comparaciones").value;
+
+			if(comp == "x==")  {		res.innerHTML = "la respuesta de x == y es:"+(x == y)	}
+			if(comp == "x===") {	res.innerHTML = "la respuesta de x === y es:"+(x === y)		}
+			if(comp == "x!=")  {		res.innerHTML = "la respuesta de x != y es:"+(x != y)	}
+			if(comp == "x!==") {	res.innerHTML = "la respuesta de x !== y es:"+(x !== y)		}
+			if(comp == "X>")   {		res.innerHTML = "la respuesta de x > y es:"+(x > y)		}
+			if(comp == "X<")   {		res.innerHTML = "la respuesta de x < y es:"+(x < y)		}
+			if(comp == "x>=")  {		res.innerHTML = "la respuesta de x >= y es:"+(x >= y)	}
+			if(comp == "x<=")  {		res.innerHTML = "la respuesta de x <= y es:"+(x <= y)	}
+		}
+	</script>
+</body>
+</html>

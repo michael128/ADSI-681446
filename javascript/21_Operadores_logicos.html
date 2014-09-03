@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Operadores - Logicos</title>
+</head>
+<body>
+<hr>
+	<h1>Operadores - Logicos</h1>
+
+	<fieldset>
+		<legend>Operadores - Logicos</legend>
+
+		<input type="number" id="x1">
+		
+		<ul id="respuesta"></ul>
+	</fieldset>
+
+	<script>
+
+     
+	var res = document.getElementById("respuesta")
+	var x = prompt("Ingrese el valor de x:")
+	var y = prompt("Ingrese el valor de y:")
+	
+	var op1 = (x < 10 && y > 1);
+	var op2 = (x == 5 || y == 5);
+	var op3 = !(x==y);
+
+	res.innerHTML = "<li>(x < 10 && y > 1)="+op1+"</li>"
+	res.innerHTML += "<li>(x == 5 || y == 5)="+op2+"</li>"
+	res.innerHTML += "<li>!(x==y)="+op3+"</li>"
+
+	</script>
+
+</body>
+</html>

@@ -11,7 +11,7 @@
 	<fieldset>
 		<legend>Operadores - Logicos</legend>
 
-		<input type="number" id="x1">
+		
 		
 		<ul id="respuesta"></ul>
 	</fieldset>
@@ -23,14 +23,19 @@
 	var x = prompt("Ingrese el valor de x:")
 	var y = prompt("Ingrese el valor de y:")
 	
-	var op1 = (x < 10 && y > 1);
-	var op2 = (x == 5 || y == 5);
-	var op3 = !(x==y);
 
-	res.innerHTML = "<li>(x < 10 && y > 1)="+op1+"</li>"
-	res.innerHTML += "<li>(x == 5 || y == 5)="+op2+"</li>"
-	res.innerHTML += "<li>!(x==y)="+op3+"</li>"
-
+	   if(x.length > 0 && y.length >0) {var op1 = (x < 10 && y > 1);
+		var op2 = (x == 5 || y == 5);
+		var op3 = !(x==y);
+	
+		res.innerHTML = "<li>(x < 10 && y > 1)="+op1+"</li>"
+		res.innerHTML += "<li>(x == 5 || y == 5)="+op2+"</li>"
+		res.innerHTML += "<li>!(x==y)="+op3+"</li>"
+	}
+	else {
+		alert("Por favor debe ingresar ambos valores...")
+		window.location.replace("21_operadores_logicos.html")
+	}
 	</script>
 
 </body>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Reto - Js</title>
+</head>
+<style>
+	*{
+		margin:0px;
+		padding: 0px;
+		border:0px;
+	}
+	
+	body{
+		font: 16px sans-serif;
+		  background: -webkit-linear-gradient(top , #000, #bbb);
+		background:    -moz-linear-gradient(top, #000, #bbb);
+		background:     -ms-linear-gradient(top, #000, #bbb);
+		background:      -o-linear-gradient(top, #000, #bbb);
+		background:         linear-gradient(top, #000, #bbb);
+
+	}
+	h1 {
+		border:1px solid #005664;
+		height: 50px;
+		width:100%;
+		text-align: center;
+		color: #000;
+		background-color: #008EA8;
+		font-size: 3em;
+		background-attachment:fixed;
+
+
+	}
+
+		section.genero{
+			
+			margin:30px auto;
+			width:1024px;
+
+	    background: -webkit-linear-gradient(top , #005664, #008EA8);
+		background:    -moz-linear-gradient(top, #005664, #008EA8);
+		background:     -ms-linear-gradient(top, #005664, #008EA8);
+		background:      -o-linear-gradient(top, #005664, #008EA8);
+		background:         linear-gradient(top, #005664, #008EA8);
+
+		border-radius: 10px ;
+}
+section.genero h2 {
+		border-radius: 10px ;
+		height: 60px;
+		text-align: center;
+		color: #fff;
+		background-color: #004653;
+		font-size: 3em;}
+
+		section.genero article.cg {
+			border:2px solid #005664;
+			display:inline-block;
+			margin: 50px;
+			height:400px;
+			width: 400px;
+			border-radius: 10px ;
+			box-shadow: 20px 10px 50px 20px #005564 inset;
+		}
+
+section.genero article.p1 {
+	background: url(imgs/femenino.png)no-repeat center;
+	background-size: 50%;
+}
+section.genero article.p2 {
+	background: url(imgs/masculino.png)no-repeat center;
+	background-size: 50%;
+}
+fieldset {
+	border:4px solid #9A2782;
+	margin: -0px auto;
+	height: 40px;
+	width:300px;}
+
+
+
+
+</style>
+
+<body>
+	
+	<head>
+		<h1>IR A LA GUERRA</h1>
+		<section class="genero">
+		<h2>SELECCIONE UN GENERO</h2>
+			<article class="cg p1" id="fe"></article>
+			<article class="cg p2" id="mas"></article>
+			<h2 id="respuesta"></h2>
+		
+      
+		 <fieldset>
+	<input type="number" min="1" max="1000" required placeholder="INGRESE SU EDAD" id="edad">
+	<button id="very">verificar</button>
+
+		 </fieldset>
+		</section>
+	</head>
+
+	<script>
+	var res = document.getElementById('respuesta');
+	var verificar = document.getElementById("very");
+
+
+	verificar.onclick = function(){
+		var edad = document.getElementById("edad").value;
+		if (edad >= 18) {
+			res.innerHTML = "USTED VA A LA GUERRA"
+		}
+
+		else { res.innerHTML = "USTED NO VA A LA GUERRA"}
+	}
+
+
+	</script>
+</body>
+</html>

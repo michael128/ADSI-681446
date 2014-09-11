@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sentencia - Else</title>
+</head>
+<body>
+	<fieldset>
+		<legend><h2>Sentencia - Else</h2></legend>
+		<input type="number" id="edad" placeholder="Ingrese su Edad">
+		<button id="btn">Verificar Edad</button>
+	</fieldset>
+	<h2 id="mostrar"></h2>
+	<script>
+	var btn = document.getElementById("btn");
+	var ele = document.getElementById("mostrar");
+
+	btn.onclick = function() {
+		var edad = document.getElementById("edad").value;
+		if (edad >= 18) {
+			ele.innerHTML = "Usted es mayor de edad";
+		}
+		else {
+			ele.innerHTML = "Usted es menor de edad";
+		}
+	}
+	</script>
+</body>
+</html>

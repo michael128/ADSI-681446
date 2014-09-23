@@ -29,7 +29,7 @@
 		background-color: #008EA8;
 		font-size: 3em;
 		background-attachment:fixed;
-
+		text-shadow: 2px 2px 4px #fff ;
 
 	}
 
@@ -52,33 +52,76 @@ section.genero h2 {
 		text-align: center;
 		color: #fff;
 		background-color: #004653;
-		font-size: 3em;}
+		font-size: 3em;
+		text-shadow: 2px 2px 4px #000 ;
+	}
 
 		section.genero article.cg {
 			border:2px solid #005664;
 			display:inline-block;
-			margin: 50px;
-			height:400px;
-			width: 400px;
+			margin: 17px;
+			height:300px;
+			width: 300px;
 			border-radius: 10px ;
-			box-shadow: 20px 10px 50px 20px #005564 inset;
+			margin-bottom: 0px ;
+			box-shadow: 10px 10px 120px 20px #005564 inset;
 		}
 
 section.genero article.p1 {
-	background: url(imgs/femenino.png)no-repeat center;
-	background-size: 50%;
+	background: url(imgs/mujerd.png)no-repeat center;
+	background-size: 50%;}
+section.genero article.p1:hover{
+	background-size:70%;
+	cursor:pointer;
 }
 section.genero article.p2 {
-	background: url(imgs/masculino.png)no-repeat center;
+	background: url(imgs/hombred.png)no-repeat center;
 	background-size: 50%;
+	}
+	section.genero article.p2:hover{
+	background-size:70%;
+	cursor:pointer;
+	}
+section.genero article.p3 {
+	box-shadow: 10px 10px 10px  #005564;
+	border-radius: 20px;
+
 }
-fieldset {
-	border:4px solid #9A2782;
+section.genero  fieldset {
+	
+	background-color: #00A589;
 	margin: -0px auto;
+	height: 50px;
+	width:400px;
+	box-shadow: 2px 2px 50px 2px #005564 inset;
+	border-radius: 10px;
+	visibility: hidden;
+}
+
+section.genero input{
+	border: 2px solid #006251;
+	width: 250px;
 	height: 40px;
-	width:300px;}
+	margin: 4px;
+	font: bolder 1.2em arial;
 
-
+}
+section.genero button{
+	border: 2px solid #006251;
+	background-color: #00A589;
+	width: 100px;
+	height: 40px;
+	margin: 4px;
+	font: bolder 1.2em arial;
+	margin-left: 20px;
+}
+section.genero button:hover {
+	border: 2px solid #88FFEA;
+	background-color: #B9FFF2;
+}
+section.genero h2#respuesta{
+	visibility: hidden;
+}
 
 
 </style>
@@ -91,11 +134,12 @@ fieldset {
 		<h2>SELECCIONE UN GENERO</h2>
 			<article class="cg p1" id="fe"></article>
 			<article class="cg p2" id="mas"></article>
+			<article class="cg p3" id="validar"></article>
 			<h2 id="respuesta"></h2>
 		
       
-		 <fieldset>
-	<input type="number" min="1" max="1000" required placeholder="INGRESE SU EDAD" id="edad">
+		 <fieldset id="inp">
+	<input type="number" min="none" max="1000" required placeholder="INGRESE SU EDAD" id="edad">
 	<button id="very">verificar</button>
 
 		 </fieldset>
@@ -105,16 +149,51 @@ fieldset {
 	<script>
 	var res = document.getElementById('respuesta');
 	var verificar = document.getElementById("very");
+	var val = document.getElementById("validar");
+	var mas = document.getElementById("mas");
+	var inp = document.getElementById("inp");
+	var fem = document.getElementById("fe");
+	var sexo;
 
+	mas.onclick = function(){
+		res.style.visibility = "hidden";
+		inp.style.visibility = "visible";
+		sexo = "hombre";
+		val.style.backgroundImage = "none";
+		mas.style.backgroundImage = "url(imgs/masculino.png)"
+		fe.style.backgroundImage = "url(imgs/mujerd.png)"
+		}
+	
+	fe.onclick = function(){
+		res.style.visibility = "hidden";
+		inp.style.visibility = "hidden";
+		sexo = "mujer";
+		verificar.style.visibility = "visible"
+		fe.style.backgroundImage = "url(imgs/femenino.png)"
+		val.style.backgroundImage = "none"
+		mas.style.backgroundImage = "url(imgs/hombred.png)"
+
+	}
 
 	verificar.onclick = function(){
 		var edad = document.getElementById("edad").value;
-		if (edad >= 18) {
-			res.innerHTML = "USTED VA A LA GUERRA"
+		res.style.visibility = "visible";
+		if (sexo == "mujer") {
+			val.style.backgroundImage = "url(imgs/felicidad.jpg)";
+			res.innerHTML = "USTED NO VA A LA GUERRA";
 		}
-
-		else { res.innerHTML = "USTED NO VA A LA GUERRA"}
-	}
+		else { 
+			if (sexo == "hombre" && edad >= 18) {
+				val.style.backgroundImage = "url(imgs/guerra.png)";
+			res.innerHTML = "USTED  VA A LA GUERRA";}	
+			else{
+				val.style.backgroundImage = "url(imgs/feliz.png)";
+			res.innerHTML = "USTED NO  VA A LA GUERRA";}	
+			}
+		}
+		
+	
+	
 
 
 	</script>

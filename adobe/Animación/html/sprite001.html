@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Animation steps()</title>
+	<style>
+	section#sprite{
+	background: url(imgs/sprite01.png) left center;
+	height:200px;
+	margin:0px auto;
+	width:140px;
+	
+	-webkit-animation: play 0.4s steps(5) infinite;
+	animation: play 0.4s steps(5) infinite;
+	}
+	@-webkit-keyframes play {
+		100% {background-position: -680px;}
+	}
+
+	@keyframes play {
+		100% {background-position: -680px;}
+	}
+	</style>
+</head>
+<body>
+	<section id="sprite"></section>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Animación - pelea</title>
+
+	<style>
+	section#pelea{
+		margin: 0px auto;
+		height:151px;
+		width:80px;
+		background: url(imgs/sprite02.png) left center;
+		
+		-webkit-animation: peleas 0.5s steps(5) infinite;
+		animation: peleas 0.5s steps(5) infinite;}
+
+		@-webkit-keyframes peleas{
+		100% {background-position:-578px;}
+		}
+		@keyframes peleas{
+		100% {background-position:-578px;}
+		}
+	</style>
+</head>
+<body>
+	<section id="pelea"></section>
+</body>
+</html>

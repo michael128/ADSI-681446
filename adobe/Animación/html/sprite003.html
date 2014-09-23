@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Animación - Sprite - Halo</title>
+	<style>
+	section#halo{
+		margin:0px;
+		width:200px;
+		height:270px;
+		background: url(imgs/halo3.png) left center;
+		position:relative;
+		animation: animarHalo 3s steps(6) infinite;
+		-webkit-animation: animarHalo 3s steps(6) infinite;
+	}
+
+	@keyframes animarHalo {
+		100%{ background-position:-1214px;}
+	}
+	@-webkit-keyframes animarHalo {
+		0%{left:100px;}
+		25%{left:200px;}
+		50%{left:300px;}
+		75%{  left:300px; }
+		100%{ background-position:-1320px; left:850px; }
+	}
+	</style>
+</head>
+<body>
+	<h1>Animación - Sprite - Halo</h1>
+	<section id="halo"></section>
+
+	<script>
+
+	</script>
+</body>
+</html>

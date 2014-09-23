@@ -23,7 +23,7 @@
 
 
 	section#halo4{
-		overflow: hidden;
+		/*overflow: hidden;*/
 		border: 10px double #0144C0;
 		width: 1024px;
 		height: 700px;
@@ -269,8 +269,8 @@ section.halo article{
 		top: -1570px;
 		left: -40px;
 		opacity: 0;
-    -webkit-animation: animarcovenans 10s ease-in 32s infinite;
-	   -moz-animation: animarcovenans 10s ease-in 32s infinite; 
+    -webkit-animation: animarcovenans 10s ease-in 32s;
+	   -moz-animation: animarcovenans 10s ease-in 32s; 
 
 	}
 		@-webkit-keyframes animarcovenans {
@@ -304,9 +304,9 @@ section.halo article{
 		position: relative;
 		top: -1570px;
 		opacity: 0;
-		-webkit-animation: animarcovenan 10s ease-in 32s infinite;
-	       -moz-animation: animarcovenan 10s ease-in 32s infinite;
-      30
+		-webkit-animation: animarcovenan 10s ease-in 32s ;
+	       -moz-animation: animarcovenan 10s ease-in 32s ;
+      
 	}
 	@-webkit-keyframes animarcovenan {
 	0% {  opacity: 1; left: -700px; }
@@ -322,6 +322,28 @@ section.halo article{
 	50% { opacity: 1; }
 	60% { opacity: 1;  }
 	100% { opacity: 1;}
+	}
+	section#halo3{
+		position:relative;
+		top:-1900px;
+		margin:0px;
+		width:200px;
+		height:270px;
+		background: url(imgs/halo3.png) left center;
+		position:relative;
+		animation: animarHalo 3s steps(6) infinite ;
+		-webkit-animation: animarHalo 3s steps(6) infinite ;
+	}
+
+	@keyframes animarHalo {
+		100%{ background-position:-1214px;}
+	}
+	@-webkit-keyframes animarHalo {
+		0%{left:100px;}
+		25%{left:200px;}
+		50%{left:300px;}
+		75%{  left:300px; }
+		100%{ background-position:-1320px; left:850px; }
 	}
 
 	
@@ -355,6 +377,7 @@ section.halo article{
 
 		<section class="covenan1"></section>
 		<section class="covenan2"></section>
+		<section id="halo3"></section>
 
 
 	</Section>

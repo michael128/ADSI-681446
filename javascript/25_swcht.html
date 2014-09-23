@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Switch - Js</title>
+</head>
+<body>
+	<h1>Switch - Js - Dias de la semana</h1>
+	
+	<hr>
+	<h2 id="dia"></h2>
+	<script>
+	var fecha = new Date();
+	var dia = fecha.getDay();
+	var ele = document.getElementById("dia");
+
+	switch(dia){
+		case 1:
+		ele.innerHTML = "Hoy es Lunes"; break;
+		case 2:
+		ele.innerHTML = "Hoy es Martes"; break;
+		case 3:
+		ele.innerHTML = "Hoy es Miercoles"; break;
+		case 4:
+		ele.innerHTML = "Hoy es Jueves"; break;
+		case 5:
+		ele.innerHTML = "Hoy es viernes"; break;
+	 default:
+		ele.innerHTML = "Hoy es fin de semana"; break;
+	}
+	
+	</script>
+
+
+</body>
+</html>

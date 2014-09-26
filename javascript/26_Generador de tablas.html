@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Generador de Tablas - Js</title>
+</head>
+<body>
+	<h1>Generador de Tablas - Js</h1>
+<form action="">
+	<label for="">#Filas</label>
+	<input type="number" id="nf" min="1">
+	<label for="">#Columnas</label>
+	<input type="number" id="nc" min="1">
+	<br>
+	<button id="graficar">graficar</button>
+	<br>
+	<table id="print" border="1">
+		
+	</table>
+
+	<script>
+	graficar.onclick = function(){
+	var nf = document.getElementById("nf").value;
+	var nc = document.getElementById("nc").value;
+	var ele = document.getElementById("print");
+	var html ="";
+
+	
+	
+		for(var f = 1; f<= nf ; f++ ){
+			html += "<tr>"
+			for(var c = 1; c <= nc; c++){
+			html += "<td>♠♠♠</td>";
+			}
+			html += "</tr>";
+
+		} 
+
+		ele.innerHTML += html;
+		} 
+
+	</script>
+</form>
+</body>
+</html>

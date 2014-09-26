@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ciclos - break - continue</title>
+</head>
+<body>
+	<h1>Ciclos - break - continue</h1>
+	<hr>
+	<h2 id="res"> </h2>
+	<h3 id="resp"></h3>
+
+	<script>
+	var res = document.getElementById("res")
+	var resp = document.getElementById("resp")
+	for(var i = 1; i < 11; i++){
+		if(i===8){ break;}
+ 		res.innerHTML += i;
+	}	
+
+	for(var o = 0; o < 120; o+=5){
+		if(o==20){continue}
+			resp.innerHTML += o;
+	}
+
+	</script>
+</body>
+</html>

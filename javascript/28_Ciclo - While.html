@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ciclo - While</title>
+	<style>
+	li{
+		height:40px;
+		margin-top:5px;
+		list-style-type:none;
+	}
+	</style>
+</head>
+<body>
+	<h1>Ciclo - While</h1>
+	<hr>
+	<h2 id="colores"></h2>
+	<script>
+	var clrs = document.getElementById("colores");
+	var c = 1;
+	var r = 0;
+	var b = 240;
+	var g = 240;
+
+	while(c <= 20){
+		console.log(r);
+		clrs.innerHTML += "<li style='background-color: rgb("+r+","+g+","+b+");'></li>";
+		r = r +20;
+		g = g -20;
+		b = b -12;
+
+		c++;
+	}
+	</script>
+</body>
+</html>

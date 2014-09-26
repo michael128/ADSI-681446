@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ciclos - For / in</title>
+</head>
+<body>
+	<h1>Ciclos - For / in</h1>
+	
+	<ul id="datos"></ul>
+	<script>
+	var datos = document.getElementById("datos")
+	var personaje = {
+		nombre: "Jeremias Springfield",
+		telefono: 55555555,
+		direccion: "avenida siempre Viva",
+		edad: 67};
+
+	for(var dato in personaje){
+	  datos.innerHTML += "<li>"+personaje[dato]+"</li>"
+	}
+	</script>
+</body>
+</html>

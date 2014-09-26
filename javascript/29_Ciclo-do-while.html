@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ciclo - Do </title>
+</head>
+<body>
+	<h1>Ciclo - Do </h1>
+	<hr>
+	<input type="number" min="1" id="n1" placeholder="ingrese un numero">
+	<button onclick="calcularFactorial();">verificar</button>
+	<h2 id="respuesta"></h2>
+
+	<script>
+	function calcularFactorial(){
+		var n1 = document.getElementById("n1").value;
+		var res = document.getElementById("respuesta");
+		var fac = 1;
+		var i = 1;
+	
+	do {
+		fac *= i;
+		i++;
+	}
+	while(i <= n1);
+		res.innerHTML ="el factorial de:"+n1+"es"+fac;
+}
+
+	</script>
+</body>
+</html>

@@ -3,19 +3,27 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Ciclos - break - continue</title>
+	<style>
+	h1{
+		color:#f00;
+	}
+	</style>
 </head>
 <body>
 	<h1>Ciclos - break - continue</h1>
 	<hr>
+	<h1>break</h1>
 	<h2 id="res"> </h2>
+	<h1>continue</h1>
 	<h3 id="resp"></h3>
 
 	<script>
 	var res = document.getElementById("res")
 	var resp = document.getElementById("resp")
 	for(var i = 1; i < 11; i++){
-		if(i===8){ break;}
- 		res.innerHTML += i;
+		res.innerHTML += i
+		if(i===8) break;
+ 		;
 	}	
 
 	for(var o = 0; o < 120; o+=5){

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Eventos - Js</title>
+</head>
+<body onload="sumar();">
+	<fieldset>
+		<legend>Eventos Js</legend>
+		<input type="number" value="1" min="1" max"999" id="n1" onkeyup="sumar();">
+		<input type="number" value="1" min="1" max"999" id="n2" onkeyup="sumar();">
+		<input type="text" id="rs" readonly="readonly">
+	</fieldset>
+
+	<script>
+	function sumar() {
+ 	var n1 = document.getElementById("n1").value;
+ 	var n2 = document.getElementById("n2").value;
+ 	var rs = document.getElementById("rs");
+
+ 	rs.value = parseInt(n1) + parseInt(n2);}
+		
+	</script>
+ 	
+
+</body>
+</html>

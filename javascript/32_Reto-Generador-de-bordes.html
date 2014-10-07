@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Reto - Generador de bordes</title>
+	<link rel="stylesheet" href="css/archivo.css">
+	<script src="js/archivo.js"></script>
+</head>
+<body>
+	<section id="marco">
+	<!-- /////////////////////////////// seción de borde radius\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->	
+	<h1>GENERADOR DE CSS3</h1>
+	<section id="a2">
+	<fieldset id="estilo">
+		<legend>Opciones de caja</legend>
+		<label for="">color de fondo</label>
+		<input type="color" id="cfon" oninput="cr1.value=this.value"><output id="cr1"></output>
+		<br>
+		<label for="">color borde</label>
+		<input type="color" id="cbor" oninput="cr2.value=this.value" ><output id="cr2"></output>
+		<label for="">grosor de borde</label>
+		<input type="number" id="gborde" oninput="br1.value=this.value"><output id="br1"></output>
+	</fieldset>
+	<fieldset id="bradius">
+		<legend>Opciones de radio de borde</legend>
+		<label for="">Top - left</label>
+		<input type="range" min="0" max="200" id="tlbr" oninput="r1.value=this.value" value="0" onmousemove="modificar();"> <output id="r1"></output>
+		<br>
+		<label for="">Top - right</label>
+		<input type="range" min="0" max="200" id="trbr" oninput="r2.value=this.value" value="0" onmousemove="modificar();"> <output id="r2"></output>
+		<br>
+		<label for="">bottom-left</label>
+		<input type="range" min="0" max="200" id="blbr" oninput="r3.value=this.value" value="0" onmousemove="modificar();"> <output id="r3"></output>
+		<br>
+		<label for="">bottom-right</label>
+		<input type="range" min="0" max="200" id="brbr" oninput="r4.value=this.value" value="0" onmousemove="modificar();"> <output id="r4"></output>
+	</fieldset>
+	<!-- /////////////////////////////// seción de borde radius\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+
+	<fieldset id="scaja">
+		<legend>Opciones de sombra de caja</legend>
+		<label for="">H-Shadow</label>
+		<input type="range" min="0" max="50" id="hshadow" oninput="r5.value=this.value" value="0" onmousemove="modificar();"><output id="r5"></output>
+		<br>
+		<label for="">v-Shadow</label>
+		<input type="range" min="0" max="50" id="vshadow" oninput="r6.value=this.value" value="0" onmousemove="modificar();"><output id="r6"></output>
+		<br>
+		<label for="">Blur</label>
+		<input type="range" min="0" max="200" id="blur" oninput="r7.value=this.value" value="0" onmousemove="modificar();"><output id="r7"></output>
+		<br>
+		<label for="">Spread</label>
+		<input type="range" min="0" max="50" id="spread" oninput="r8.value=this.value" value="0" onmousemove="modificar();"><output id="r8"></output>
+		<br>
+		<label for="">Color</label>
+		<input type="color" id="col" oninput="r9.value=this.value" onchange="modificar();"><output id="r9"></output>
+		<label for="">Inset</label>
+		<input type="radio" name="tipo" id="inset">
+		<label for="">Outset</label>
+		<input type="radio" name="tipo" id="outset">
+
+	</fieldset>
+	</section>
+
+	<fieldset id="resultado">
+		<legend>Resultado</legend>
+		<article class="resultado" id="res"><h1>box</h1></article>
+	</fieldset>
+	</section>
+
+	<script>
+	var respuesta = document.getElementById("res");
+	var tipo;
+
+	function modificar(){
+	//opciones caja
+	var cfondo = document.getElementById("cfon").value;
+	var cborde = document.getElementById("cbor").value;
+	//opciones borde
+    var tlborde = document.getElementById("tlbr").value;
+	var trborde = document.getElementById("trbr").value;
+	var blborde = document.getElementById("blbr").value;
+	var brborde = document.getElementById("brbr").value;
+	//opciones sombra
+	var hsombra = document.getElementById("hshadow").value;
+	var vsombra = document.getElementById("vshadow").value;
+	var difu = document.getElementById("blur").value;
+	var groso = document.getElementById("spread").value;
+	var color = document.getElementById("col").value;
+	respuesta.style.borderRadius = tlborde+"px "+trborde+"px "+blborde+"px "+brborde+"px";
+	respuesta.style.boxShadow = hsombra+"px "+vsombra+"px "+difu+"px "+groso+"px"+" "+color;
+	var inse ="inset";
+	var outse =" ";
+	inset.onclick = function(){
+		tipo="inset";
+		respuesta.style.boxShadow = hsombra+"px "+vsombra+"px "+difu+"px "+groso+"px"+" "+color+" "+inse;
+	}
+	outset.onclick = function(){
+		tipo="outset";
+		respuesta.style.boxShadow = hsombra+"px "+vsombra+"px "+difu+"px "+groso+"px"+" "+color+" "+outse;
+	}
+	if(tipo == "inset"){
+		respuesta.style.boxShadow = hsombra+"px "+vsombra+"px "+difu+"px "+groso+"px"+" "+color+" "+inse;
+	}
+	else{
+		respuesta.style.boxShadow = hsombra+"px "+vsombra+"px "+difu+"px "+groso+"px"+" "+color+" "+outse;
+	}
+}
+	
+	
+
+
+	</script>
+</body>
+</html>

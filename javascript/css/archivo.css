@@ -1,0 +1,52 @@
+*{ 
+	border:0px;
+	margin:0px;
+	padding:0px;
+ }
+ body{
+ 	font: 16px sans-serif;
+ }
+section#marco{
+	border: 2px solid #000;
+	width: 1024px;
+	height: 520px;
+	margin: 50px auto;
+}
+fieldset#estilo{
+	border: 2px solid #000;
+	width: 500px;
+	height: 80px;
+}
+fieldset#bradius{
+	border:2px solid #000;
+	width: 500px;
+	height: 200px;
+	display: inline-block;
+}
+section#a2{
+	width: 500px;
+	display: inline-block;
+	margin-left: 10px;
+}
+fieldset#scaja{
+	border:2px solid #000;
+	width: 500px;
+	height: 200px;
+	display: inline-block;
+	vertical-align: top;
+}
+fieldset#resultado{
+	border: 2px solid #000;
+	width: 480px;
+	height: 450px;
+	display: inline-block;
+	vertical-align: top;	
+	margin:10px;
+}
+fieldset#resultado article.resultado{
+	border:2px solid #000;
+	width: 400px;
+	height: 400px;
+	margin:20px ;
+	margin: 0 auto;
+}

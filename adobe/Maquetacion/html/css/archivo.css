@@ -1,0 +1,69 @@
+body{
+	background-color: #1C4964;
+}
+section#frm{
+	background: #1C4964 url(../imgs/base.png) no-repeat;
+	/*border: 2px solid red;*/
+	margin: 0px auto;
+	width: 840px;
+	height: 558px;
+	overflow: hidden;
+	-webkit-animation: animarFrm 2s ease-in;
+}
+section#frm div.elemf {
+	display: inline-block;
+	margin-top:230px;
+	margin-left: 30px;
+}
+label{
+	display: inline-block;
+	background: #fff url(../imgs/label.png) no-repeat;
+	width: 214px;
+	height: 44px;
+	text-indent:16px;
+	vertical-align: top;
+	z-index: 3;
+	color:#fff;
+	font: lighter 1.5em/40px arial ;
+}
+
+input[type=text]{
+	border:none;
+	width: 227px;
+	height: 44px;
+	background: #fff url(../imgs/input.png) no-repeat;
+	font: lighter 1.5em/30px arial;
+	display: inline-block;
+	text-indent:16px;
+	vertical-align: top;
+	margin-left: -4px;
+	z-index: 1;
+	margin-bottom: 26px;
+	color:#fff;
+	}
+article.elemb{
+	margin-left: 455px;
+	/*border:1px solid red;*/
+	position: relative;
+	top: -30px;
+	width: 100px;
+	height: 100px;
+	background: transparent url(../imgs/button.png) no-repeat;
+	text-indent: -9999px;
+}
+article.elemb:hover{
+	cursor: pointer;
+	background: transparent url(../imgs/button1.png) no-repeat;
+	-webkit-animation: animationtrans 1s ease-out;
+	-o-animation: animationtrans 1s ease-out;
+	animation: animationtrans 1s ease-out;
+}
+
+@-webkit-keyframes animarFrm {
+	0%{ -webkit-transform: scale(0.2); opacity: 0.5}
+	100%{ -webkit-transform: rotate(0.1); opacity: 1;}
+}
+@-webkit-keyframes animationtrans {
+	0%{ -webkit-transform: rotate(0deg);}
+	100%{ -webkit-transform: rotate(360deg);}
+}
